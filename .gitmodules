@@ -1,0 +1,6 @@
+[submodule "bundles/vim-orgmode"]
+	path = bundles/vim-orgmode
+	url = git://github.com/jceb/vim-orgmode.git
+[submodule "bundles/nerdtree"]
+	path = bundles/nerdtree
+	url = git://github.com/scrooloose/nerdtree.git
