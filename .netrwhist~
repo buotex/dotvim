@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/bxu/.oh-my-zsh/plugins/autojump'
+let g:netrw_dirhist_2='/home/bxu/.oh-my-zsh/plugins/gnu-utils'
+let g:netrw_dirhist_3='/home/bxu/.oh-my-zsh/plugins/ssh-agent'
+let g:netrw_dirhist_4='/home/bxu/.oh-my-zsh/custom/example'
+let g:netrw_dirhist_5='/home/bxu/.local/share/autojump'
+let g:netrw_dirhist_6='/home/bxu/.local/share'
+let g:netrw_dirhist_7='/home/bxu/.mutt'
+let g:netrw_dirhist_8='/home/bxu/scripts'
+let g:netrw_dirhist_9='/home/bxu/.mutt'
