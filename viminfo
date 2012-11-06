@@ -125,7 +125,7 @@ $
 	.
 
 # File marks:
-'0  4  6  ~/.vim/.gitignore
+'0  4  8  ~/.vim/.gitignore
 '1  3  0  ~/.vim/.gitignore
 '2  2  3  ~/.vim/.gitignore
 '3  1  0  ~/.vim/.gitignore
@@ -137,7 +137,7 @@ $
 '9  1  0  /etc/rc.d/rc.inet1
 
 # Jumplist (newest first):
--'  4  6  ~/.vim/.gitignore
+-'  4  8  ~/.vim/.gitignore
 -'  3  0  ~/.vim/.gitignore
 -'  2  3  ~/.vim/.gitignore
 -'  1  0  ~/.vim/.gitignore
@@ -234,19 +234,18 @@ $
 -'  485  12  /usr/local/packages/luajit-2.0/src/Makefile
 -'  472  9  /usr/local/packages/luajit-2.0/src/Makefile
 -'  470  0  /usr/local/packages/luajit-2.0/src/Makefile
--'  457  9  /usr/local/packages/luajit-2.0/src/Makefile
 
 # History of marks within files (newest to oldest):
 
 > ~/.vim/.gitignore
-	"	4	6
-	^	4	7
-	.	4	6
+	"	4	8
+	^	4	9
+	.	4	8
 	+	1	0
 	+	2	3
 	+	3	3
 	+	5	0
-	+	4	6
+	+	4	8
 
 > ~/.mutt/gmail.muttrc
 	"	10	36
