@@ -1,6 +1,4 @@
 set nocompatible
-let g:pathogen_disabled=["minibufexpl"]
-call pathogen#infect("bundles")
 syntax on
 filetype plugin indent on
 
@@ -10,6 +8,53 @@ filetype plugin indent on
 "noremap <C-I> <Right>
 "noremap <C-Y> <PageDown>
 "noremap <C-L> <PageUp>
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+
+Bundle 'tpope/vim-fugitive'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+Bundle 'tpope/vim-rails.git'
+" vim-scripts repos
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+Bundle 'vim-scripts/netrw.vim'
+Bundle 'kien/ctrlp.vim'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-unimpaired'
+Bundle 'tpope/vim-markdown'
+Bundle 'sjl/gundo.vim'
+Bundle 'bling/vim-airline'
+Bundle 'joonty/vdebug'
+Bundle 'davidhalter/jedi-vim'
+Bundle 'buotex/vim-instant-markdown'
+Bundle 'buotex/instant-markdown-d'
+Bundle 'buotex/Docter'
+
+
+"airline configuration"
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+set ttimeoutlen=50
+set laststatus=2
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+  endif
+let g:airline_symbols.space = "\ua0""
+"end airline configuration"
+
+nnoremap <F2> :GundoToggle<CR>
+
+
+
+
+
 
 if $TERM == "linux" 
 	set term=xterm
@@ -22,6 +67,11 @@ endif
 if $TERM == "screen"
   set term=xterm
 endif
+set t_Co=256
+
+
+nnoremap  <silent>   <tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>
+nnoremap  <silent> <s-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
 
 noremap <C-Down> <C-W>j
 noremap <C-Right> <C-W>l
@@ -41,14 +91,6 @@ nmap <Space> j
 vmap <Space> j
 
 set timeout timeoutlen=150
-inoremap AA <C-o>A
-inoremap II <C-o>I
-inoremap OO <C-o>O
-
-inoremap UU <C-o>u
-inoremap CC <C-o>C
-inoremap DD <C-o>dd
-inoremap SS <C-o>S
 command C :nohls
 
 colorscheme wombat
@@ -82,9 +124,10 @@ setlocal tabstop=2
 setlocal softtabstop=2
 setlocal shiftwidth=2
 setlocal expandtab
-setlocal textwidth=80
+setlocal textwidth=120
 setlocal nowrap
 
+map <F4> :NERDTree <CR>
 map <F6> :setlocal spell spelllang=en_us <CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""'

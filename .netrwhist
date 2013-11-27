@@ -1,8 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/home/bxu/code/praktikum/postgresql'
-let g:netrw_dirhist_2='/home/bxu/code/praktikum/postgresql/package'
-let g:netrw_dirhist_3='/home/bxu/code/praktikum/postgresql/package/FeatureTemplates/hmm_lib/hmm'
-let g:netrw_dirhist_4='/etc/cron.daily'
-let g:netrw_dirhist_5='/home/bxu/.sent-mail'
-let g:netrw_dirhist_6='/home/bxu/.vim/bundles/jellybeans.vim'
+let g:netrw_dirhist_cnt =0

@@ -1,0 +1,2 @@
+#!/bin/sh
+npm install -g http://github.com/buotex/instant-markdown-d/tarball/master  
