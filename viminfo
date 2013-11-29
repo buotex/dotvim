@@ -8,57 +8,57 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/ia32
+~MSle0~/netrw
 
 # Last Substitute Search Pattern:
-~MSle0& 
+~MSle0&int
 
 # Last Substitute String:
-$,
+$\2
 
 # Command Line History (newest to oldest):
-:q
-:w
-:wq
 :q!
-:vsplit
-:help encoding
-:set encoding utf-8
-:set encoding=utf8
-:set encoding=utf-8
-:set encoding utf8
-:vsplit ~/code/testing/python/regex.py
-:qa
-:help jedi-vim
-:call Post(1)
-:vsplit ~/code/testing/python/curl.py
-:help BufNew
-:help new
-:help cbuffer
+:Nread scp://luca/
+:Nread luca:test
+:Nread luca:			
+:help netrw-read
+:netrw-read
+:help netrw
+:q
 :BundleInstall
-:call Post("H√∂henfunktion")
+:w
+:Gist l
+:Gist -p
+:qa
+:Gstatus
+:help fugitive
+:Gist -m
+:bd
+:bu
+:Gist
+:e!
 
 # Search String History (newest to oldest):
-?/tes
-?/render
-?/sub(
-?/permalink
-?/refreshView
-?/Refresh
-?/startDaemon
-?/bufGetContents
-?/curl
-?/Omni
-?/ia32
-?/system
-?/gfm
-?// 
-?/Buffer
-?/bnext
-?/Buf
-?/buf
-?/]b
-?/buffer
+?/netrw
+?/S
+?/FOREIGN KEY
+?/go
+?/getJson
+?/account_id
+?/sleep
+?/print
+?/persona
+?/getPersonaFrom
+?/friends
+?/insertPlayers
+? int
+? --
+?/steamIdTo32
+?/db\k
+?/createInsert
+?/PARAMS
+?/params
+?/SteamId
 
 # Expression History (newest to oldest):
 =expand("%:p:h") . "/"
@@ -68,48 +68,38 @@ $,
 # Input Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	    gfm.stdin.write(input_decoded);
+"0	CHAR	0
+	https://gist.github.com/8e7a7128bd75877dd4cb
 ""1	LINE	0
-	       // gfm.stdin.write(chunk);
+	map <F5> :w<CR>!multimarkdown % > /home/bxu/tmp/multimarkdown <bar> google-chrome-stable /home/bxu/tmp/multimarkdown
 "2	LINE	0
-	        // input_decoded = new Buffer(input_encoded, 'base64').toString('utf8');
+	075
 "3	LINE	0
-	√Ñ√ñ√ú
+	074
 "4	LINE	0
-	- Antisymmetrie $f(u,v) = - f(v,u)$
-	- √úberschuss $f(V,u) \geq 0$ hier im Gegensatz zu $\sum f(u,v) = \sum f(v,u)$
-	
-	H√∂henfunktion h(s)
-	---
+	073
 "5	LINE	0
-	---
-	- Kapazit√§t $f < c$
-	- Antisymmetrie $f(u,v) = - f(v,u)$
-	- √úberschuss $f(V,u) \geq 0$ hier im Gegensatz zu $\sum f(u,v) = \sum f(v,u)$
-	
-	H√∂henfunktion h(s)
-	---
+	072
 "6	LINE	0
-	- h(s) = |V|
-	- h(t) = 0
-	- h(u) $\leq$ h(v) + 1 f√ºr jede Kante aus dem reduzierten Netzwerk $D_f$
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	- S
 "7	LINE	0
-	O
+	- (b) and accomplishes detection by
 "8	LINE	0
-	    //'base64').toString('utf8');
+	picking a
+	non-overlapping subset of regions (c), where each region is assigned a label corresponding to the estimated number of
+	objects
+	(green=1, blue=2, purple=3). Such solution can be further refined to estimate individual object locations (d). The
+	learning
+	in our model is performed based on weak annotation (red dots) and is driven by an instance count loss. Solutions with
+	zero
+	loss (c and e) as well as non-zero loss (f and g) are shown. In the latter case, arrows indicate violations from the
+	perfect
+	correspondence between the solution and the ground truth dotting.
+	
+	
+	
 "9	LINE	0
-	    //Buffer("UHJlZmxvdy1QdXNoCj09PT09CgpQcsOkZmx1c3MKLS0tCi0gS2FwYXppdMOkdCAkZiA8IGMkCi0gQW50aXN5bW1ldHJpZSAkZih1LHYpID0gLSBmKHYsdSkkCi0gw5xiZXJzY2h1c3MgJGYoVix1KSA+PSAwJAoKCg==",
+	Figure 1: Given an input image (a) our model considers a pool of nested regions (b) and accomplishes detection by
 "a	LINE	0
 	local modname = ...
 	local Interface = {}
@@ -140,121 +130,1367 @@ $,
 	4767
 <eryIuiÄklqueryIn	, featureIn	ÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkdÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkuÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄkrÄkrÄkrÄkrÄkrÄkrÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkr:wÄkuÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkriÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkdÄkrÄkrÄkrÄkrÄkrÄkr:wÄkuÄkuÄkuÄku=G:wÄkd=GÄk5ÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkPÄkPÄkPÄkNÄkNÄkPÄkuÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkdÄkNÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkd/candidateNÄkuolocal ÄkbÄkbÄkbÄkbÄkbÄkbtrainSet.labels(can	, "all"):print("canÄkbÄkbÄkblabels"):wÄk5ÄkdÄkuÄkdÄkdÄkdÄkuÄkuowait	()ÄkdÄkuÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄkrDtools.:wÄk5ÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkrÄkrÄkrÄkrÄkrÄkdÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄkdÄkdÄkuÄkdÄkui		ÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkdÄkdddÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdddÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄku/printÄkdÄkdÄkdÄkdÄkdddÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdpAÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbqueryÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbqueryÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklddÄkui		trainSetÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuddÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkuÄkupÄkdddÄku=G	AÄklÄklÄkbÄkbÄkbÄkbÄkbÄkbquery-labelsÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbquery:wÄk5ÄkdÄkuiowÄkbDotÄkbÄkbtools.waitIn	():wÄk5ÄkdÄkuÄkuI--ÄkdÄklÄkl--:wÄkuÄkuÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkuÄkuÄkuÄkuÄkuÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkrÄkrÄkuÄkuÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄkrÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄkdÄkNÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkdÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄkuÄku
 "-	CHAR	0
-	√∂
+	s
 
 # File marks:
-'0  2  0  ~/.vim/setup/instant_markdown
-'1  52  8  ~/.vim/bundle/instant-markdown-d/instant-markdown-d
-'2  19  0  ~/Dropbox/study/Reinelt/PreflowPush.markdown
-'3  18  6  ~/Dropbox/study/Reinelt/PreflowPush.markdown
-'4  18  6  ~/Dropbox/study/Reinelt/PreflowPush.markdown
-'5  18  6  ~/Dropbox/study/Reinelt/PreflowPush.markdown
-'6  18  6  ~/Dropbox/study/Reinelt/PreflowPush.markdown
-'7  4  4  ~/Dropbox/study/Reinelt/PreflowPush.markdown
-'8  14  2  ~/Dropbox/study/Reinelt/PreflowPush.markdown
-'9  18  0  ~/Dropbox/study/Reinelt/PreflowPush.markdown
+'0  1  0  ~/.vim/ftplugin/markdown.vim
+'1  1  0  ~/code/compareCounting/testing/CellDetect_v1.0/phasecontrast/trainPhasecontrast/NetrwMessage
+'2  27  19  ~/.vimrc
+'3  16  0  ~/Dropbox/study/counting/README.md
+'4  1  0  ~/code/dota/database/.git/config
+'5  12  24  ~/.gitconfig
+'6  1  0  ~/code/dota/database/.git/MERGE_MSG
+'7  18  19  ~/code/dota/database/dota.py
+'8  22  66  ~/code/dota/database/example2.py
+'9  57  7  ~/code/dota/database/example2.py
 
 # Jumplist (newest first):
--'  2  0  ~/.vim/setup/instant_markdown
--'  52  8  ~/.vim/bundle/instant-markdown-d/instant-markdown-d
--'  1  0  ~/.vim/bundle/instant-markdown-d/instant-markdown-d
--'  19  0  ~/Dropbox/study/Reinelt/PreflowPush.markdown
--'  18  6  ~/Dropbox/study/Reinelt/PreflowPush.markdown
--'  4  4  ~/Dropbox/study/Reinelt/PreflowPush.markdown
--'  14  2  ~/Dropbox/study/Reinelt/PreflowPush.markdown
--'  21  0  ~/Dropbox/study/Reinelt/PreflowPush.markdown
--'  12  0  ~/Dropbox/study/Reinelt/PreflowPush.markdown
--'  10  1  ~/Dropbox/study/Reinelt/PreflowPush.markdown
--'  25  0  ~/Dropbox/study/Reinelt/PreflowPush.markdown
--'  11  0  ~/Dropbox/study/Reinelt/PreflowPush.markdown
--'  7  0  ~/Dropbox/study/Reinelt/PreflowPush.markdown
--'  6  0  ~/Dropbox/study/Reinelt/PreflowPush.markdown
--'  18  23  ~/code/testing/python/webkit.py
--'  21  4  ~/code/testing/python/webkit.py
--'  22  9  ~/code/testing/python/webkit.py
--'  1  74  ~/code/testing/python/webkit.py
--'  207  43  /usr/local/packages/v8/Makefile
--'  1  0  /usr/local/packages/v8/Makefile
--'  4  0  /usr/local/packages/v8/build/README.txt
--'  1  0  /usr/local/packages/v8/build/README.txt
--'  44  6  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  57  4  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  56  7  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  55  7  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  53  6  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  52  6  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  87  5  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  90  5  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  54  6  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  58  4  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  44  6  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  57  4  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  56  7  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  55  7  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  53  6  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  52  6  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  87  5  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  90  5  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  54  6  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  58  4  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  44  6  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  57  4  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  56  7  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  55  7  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  53  6  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  52  6  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  87  5  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  90  5  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  54  6  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  58  4  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  44  6  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  57  4  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  56  7  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  55  7  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  53  6  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  52  6  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  87  5  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  90  5  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  54  6  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  58  4  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  44  6  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  57  4  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  56  7  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  55  7  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  53  6  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  52  6  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  87  5  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  90  5  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  54  6  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  58  4  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  44  6  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  57  4  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  56  7  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  55  7  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  53  6  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  52  6  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  87  5  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  90  5  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  54  6  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  58  4  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  44  6  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  57  4  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  56  7  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  55  7  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  53  6  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  52  6  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  87  5  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  90  5  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  57  8  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  58  8  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  69  0  /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
--'  8  0  ~/code/testing/python/curl.py
--'  32  0  ~/.vim/bundle/vim-instant-markdown/after/ftplugin/markdown/instant-markdown.vim
--'  24  57  ~/.vim/bundle/vim-instant-markdown/after/ftplugin/markdown/instant-markdown.vim
--'  118  0  ~/.vim/bundle/vim-instant-markdown/after/ftplugin/markdown/instant-markdown.vim
--'  20  0  ~/Dropbox/study/Reinelt/PreflowPush.markdown
+-'  1  0  ~/.vim/ftplugin/markdown.vim
+-'  1  0  ~/code/compareCounting/testing/CellDetect_v1.0/phasecontrast/trainPhasecontrast/NetrwMessage
+-'  27  19  ~/.vimrc
+-'  59  27  ~/.vimrc
+-'  16  0  ~/Dropbox/study/counting/README.md
+-'  17  0  ~/Dropbox/study/counting/README.md
+-'  1  0  ~/Dropbox/study/counting/README.md
+-'  1  0  ~/code/dota/database/.git/config
+-'  12  24  ~/.gitconfig
+-'  16  29  ~/.gitconfig
+-'  1  0  ~/.gitconfig
+-'  1  0  ~/code/dota/database/.git/MERGE_MSG
+-'  18  19  ~/code/dota/database/dota.py
+-'  1  0  ~/code/dota/database/dota.py
+-'  21  0  ~/code/dota/database/createTables.sql
+-'  1  0  ~/code/dota/database/identries
+-'  93  0  ~/code/dota/database/example2.py
+-'  1  0  /tmp/vim-simpledb-result.txt
+-'  1  0  ~/code/dota/database/createTables.sql
+-'  33  0  ~/code/dota/database/dota.py
+-'  171  40  ~/code/dota/database/dota.py
+-'  173  19  ~/code/dota/database/dota.py
+-'  159  12  ~/code/dota/database/dota.py
+-'  160  12  ~/code/dota/database/dota.py
+-'  155  68  ~/code/dota/database/dota.py
+-'  18  19  ~/code/dota/database/dota.py
+-'  1  0  ~/code/dota/database/dota.py
+-'  21  0  ~/code/dota/database/createTables.sql
+-'  1  0  ~/code/dota/database/identries
+-'  93  0  ~/code/dota/database/example2.py
+-'  1  0  /tmp/vim-simpledb-result.txt
+-'  1  0  ~/code/dota/database/createTables.sql
+-'  33  0  ~/code/dota/database/dota.py
+-'  171  40  ~/code/dota/database/dota.py
+-'  173  19  ~/code/dota/database/dota.py
+-'  159  12  ~/code/dota/database/dota.py
+-'  160  12  ~/code/dota/database/dota.py
+-'  155  68  ~/code/dota/database/dota.py
+-'  1  0  ~/code/dota/database/.git/MERGE_MSG
+-'  18  19  ~/code/dota/database/dota.py
+-'  1  0  ~/code/dota/database/dota.py
+-'  21  0  ~/code/dota/database/createTables.sql
+-'  1  0  ~/code/dota/database/identries
+-'  93  0  ~/code/dota/database/example2.py
+-'  1  0  /tmp/vim-simpledb-result.txt
+-'  1  0  ~/code/dota/database/createTables.sql
+-'  33  0  ~/code/dota/database/dota.py
+-'  171  40  ~/code/dota/database/dota.py
+-'  173  19  ~/code/dota/database/dota.py
+-'  159  12  ~/code/dota/database/dota.py
+-'  160  12  ~/code/dota/database/dota.py
+-'  155  68  ~/code/dota/database/dota.py
+-'  18  19  ~/code/dota/database/dota.py
+-'  1  0  ~/code/dota/database/dota.py
+-'  21  0  ~/code/dota/database/createTables.sql
+-'  1  0  ~/code/dota/database/identries
+-'  93  0  ~/code/dota/database/example2.py
+-'  1  0  /tmp/vim-simpledb-result.txt
+-'  1  0  ~/code/dota/database/createTables.sql
+-'  33  0  ~/code/dota/database/dota.py
+-'  171  40  ~/code/dota/database/dota.py
+-'  173  19  ~/code/dota/database/dota.py
+-'  159  12  ~/code/dota/database/dota.py
+-'  160  12  ~/code/dota/database/dota.py
+-'  155  68  ~/code/dota/database/dota.py
+-'  12  24  ~/.gitconfig
+-'  16  29  ~/.gitconfig
+-'  1  0  ~/.gitconfig
+-'  1  0  ~/code/dota/database/.git/MERGE_MSG
+-'  18  19  ~/code/dota/database/dota.py
+-'  1  0  ~/code/dota/database/dota.py
+-'  21  0  ~/code/dota/database/createTables.sql
+-'  1  0  ~/code/dota/database/identries
+-'  93  0  ~/code/dota/database/example2.py
+-'  1  0  /tmp/vim-simpledb-result.txt
+-'  1  0  ~/code/dota/database/createTables.sql
+-'  33  0  ~/code/dota/database/dota.py
+-'  171  40  ~/code/dota/database/dota.py
+-'  173  19  ~/code/dota/database/dota.py
+-'  159  12  ~/code/dota/database/dota.py
+-'  160  12  ~/code/dota/database/dota.py
+-'  155  68  ~/code/dota/database/dota.py
+-'  18  19  ~/code/dota/database/dota.py
+-'  1  0  ~/code/dota/database/dota.py
+-'  21  0  ~/code/dota/database/createTables.sql
+-'  1  0  ~/code/dota/database/identries
+-'  93  0  ~/code/dota/database/example2.py
+-'  1  0  /tmp/vim-simpledb-result.txt
+-'  1  0  ~/code/dota/database/createTables.sql
+-'  33  0  ~/code/dota/database/dota.py
+-'  171  40  ~/code/dota/database/dota.py
+-'  173  19  ~/code/dota/database/dota.py
+-'  159  12  ~/code/dota/database/dota.py
+-'  160  12  ~/code/dota/database/dota.py
+-'  155  68  ~/code/dota/database/dota.py
+-'  1  0  ~/code/dota/database/.git/MERGE_MSG
+-'  18  19  ~/code/dota/database/dota.py
+-'  16  0  ~/Dropbox/study/counting/README.md
 
 # History of marks within files (newest to oldest):
+
+> ~/.vim/ftplugin/markdown.vim
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/code/compareCounting/testing/CellDetect_v1.0/phasecontrast/trainPhasecontrast/[Vundle] Installer
+	"	26	0
+	.	1	0
+	+	1	0
+
+> ~/.vim/bundle/netrw/doc/pi_netrw.txt
+	"	365	6
+
+> ~/.vimrc
+	"	27	19
+	^	27	20
+	.	27	20
+	+	101	0
+	+	2	0
+	+	2	0
+	+	46	0
+	+	17	0
+	+	16	2
+	+	19	0
+	+	41	0
+	+	28	14
+	+	29	33
+	+	28	25
+	+	29	29
+	+	28	0
+	+	30	21
+	+	139	0
+	+	31	44
+	+	32	8
+	+	69	0
+	+	47	48
+	+	61	0
+	+	47	0
+	+	62	0
+	+	63	0
+	+	62	0
+	+	63	0
+	+	35	21
+	+	65	11
+	+	41	0
+	+	41	0
+	+	44	29
+	+	44	0
+	+	44	0
+	+	44	0
+	+	47	0
+	+	49	0
+	+	41	24
+	+	41	0
+	+	44	0
+	+	41	0
+	+	40	36
+	+	40	7
+	+	47	0
+	+	50	31
+	+	53	0
+	+	45	22
+	+	54	26
+	+	43	13
+	+	31	0
+	+	77	110
+	+	43	0
+	+	33	0
+	+	48	17
+	+	41	0
+	+	36	7
+	+	38	33
+	+	33	13
+	+	39	0
+	+	33	0
+	+	37	0
+	+	39	20
+	+	77	0
+	+	54	0
+	+	34	16
+	+	101	35
+	+	101	0
+	+	101	0
+	+	98	7
+	+	98	0
+	+	98	0
+	+	98	0
+	+	91	0
+	+	39	0
+	+	40	0
+	+	41	0
+	+	35	0
+	+	39	0
+	+	40	0
+	+	41	0
+	+	42	29
+	+	59	0
+	+	27	20
+
+> ~/Dropbox/study/counting/README.md
+	"	16	0
+	^	16	0
+	.	14	0
+	+	1	9
+	+	3	1
+	+	3	62
+	+	4	24
+	+	17	0
+	+	1	15
+	+	17	65
+	+	17	0
+	+	5	43
+	+	17	1
+	+	5	17
+	+	7	43
+	+	8	2
+	+	7	2
+	+	10	25
+	+	9	27
+	+	17	0
+	+	5	37
+	+	9	39
+	+	12	20
+	+	12	20
+	+	12	112
+	+	14	0
+
+> ~/code/dota/database/.git/config
+	"	1	0
+
+> ~/.gitconfig
+	"	12	24
+	^	16	30
+	.	13	0
+	+	13	0
+
+> ~/code/dota/database/.git/MERGE_MSG
+	"	1	0
+
+> ~/code/dota/database/dota.py
+	"	18	19
+	^	33	0
+	.	192	3
+	+	194	24
+	+	182	4
+	+	183	80
+	+	14	38
+	+	15	0
+	+	14	0
+	+	23	0
+	+	24	0
+	+	23	19
+	+	17	15
+	+	16	0
+	+	17	39
+	+	183	55
+	+	182	0
+	+	182	0
+	+	182	0
+	+	182	0
+	+	182	0
+	+	182	0
+	+	192	0
+	+	17	0
+	+	17	16
+	+	17	0
+	+	158	11
+	+	163	19
+	+	159	0
+	+	165	0
+	+	163	16
+	+	121	0
+	+	120	51
+	+	46	0
+	+	41	0
+	+	51	0
+	+	44	8
+	+	184	8
+	+	139	0
+	+	139	0
+	+	140	27
+	+	184	0
+	+	44	0
+	+	154	0
+	+	156	3
+	+	153	0
+	+	154	13
+	+	156	3
+	+	154	4
+	+	155	3
+	+	154	18
+	+	154	0
+	+	154	0
+	+	156	0
+	+	168	0
+	+	159	0
+	+	159	0
+	+	159	0
+	+	165	9
+	+	154	0
+	+	165	11
+	+	165	0
+	+	165	24
+	+	168	0
+	+	177	0
+	+	168	7
+	+	177	0
+	+	166	13
+	+	168	11
+	+	166	0
+	+	166	0
+	+	168	21
+	+	168	15
+	+	168	15
+	+	168	12
+	+	167	15
+	+	168	15
+	+	175	20
+	+	163	0
+	+	164	11
+	+	161	0
+	+	194	12
+	+	142	0
+	+	141	0
+	+	194	0
+	+	152	4
+	+	154	0
+	+	154	0
+	+	163	0
+	+	162	0
+	+	194	0
+	+	148	0
+	+	147	3
+	+	18	19
+	+	20	19
+	+	168	24
+	+	173	19
+	+	168	22
+	+	169	24
+	+	170	97
+	+	170	0
+	+	172	24
+	+	192	3
+	a	152	17
+
+> ~/code/dota/database/example2.py
+	"	93	0
+	^	90	48
+	.	75	0
+	+	36	15
+	+	35	0
+	+	35	0
+	+	39	0
+	+	56	0
+	+	57	0
+	+	58	0
+	+	59	0
+	+	60	0
+	+	60	0
+	+	62	0
+	+	60	0
+	+	58	34
+	+	62	18
+	+	62	0
+	+	61	0
+	+	61	5
+	+	13	0
+	+	13	0
+	+	13	0
+	+	13	0
+	+	13	0
+	+	65	0
+	+	64	115
+	+	64	19
+	+	65	0
+	+	64	20
+	+	65	0
+	+	65	38
+	+	65	38
+	+	65	0
+	+	65	0
+	+	65	0
+	+	65	0
+	+	65	0
+	+	62	0
+	+	65	63
+	+	65	11
+	+	65	14
+	+	66	21
+	+	65	12
+	+	66	0
+	+	66	0
+	+	66	0
+	+	68	13
+	+	65	0
+	+	67	0
+	+	67	0
+	+	93	90
+	+	65	6
+	+	65	18
+	+	93	17
+	+	104	62
+	+	94	16
+	+	95	26
+	+	96	27
+	+	105	12
+	+	93	84
+	+	105	19
+	+	104	0
+	+	69	0
+	+	105	0
+	+	96	3
+	+	90	44
+	+	66	0
+	+	89	0
+	+	69	0
+	+	88	27
+	+	89	0
+	+	100	35
+	+	103	0
+	+	96	82
+	+	72	11
+	+	71	52
+	+	70	0
+	+	72	19
+	+	92	0
+	+	96	0
+	+	96	0
+	+	96	0
+	+	96	0
+	+	73	0
+	+	96	0
+	+	102	0
+	+	101	24
+	+	102	7
+	+	73	0
+	+	74	17
+	+	86	0
+	+	65	0
+	+	75	0
+	+	85	19
+	+	84	0
+	+	74	22
+	+	60	0
+	+	21	0
+	+	23	0
+	+	31	0
+	+	67	0
+	+	75	0
+
+> ~/code/dota/database/identries
+	"	1	0
+	^	2	52
+	.	2	48
+	+	1	10
+	+	3	0
+	+	2	48
+
+> ~/code/dota/database/createTables.sql
+	"	21	0
+	.	24	0
+	+	1	2
+	+	6	0
+	+	1	3
+	+	7	16
+	+	9	83
+	+	9	84
+	+	9	83
+	+	6	0
+	+	10	0
+	+	3	23
+	+	17	0
+	+	3	0
+	+	2	3
+	+	3	0
+	+	2	0
+	+	3	0
+	+	6	0
+	+	4	0
+	+	18	0
+	+	17	17
+	+	20	48
+	+	25	1
+	+	27	20
+	+	17	1
+	+	5	1
+	+	2	1
+	+	29	15
+	+	29	13
+	+	3	0
+	+	29	42
+	+	29	23
+	+	1	0
+	+	1	0
+	+	1	0
+	+	30	24
+	+	3	0
+	+	20	30
+	+	29	30
+	+	3	0
+	+	3	41
+	+	3	31
+	+	3	45
+	+	3	26
+	+	3	67
+	+	52	0
+	+	44	15
+	+	3	33
+	+	24	11
+	+	3	23
+	+	3	0
+	+	3	1
+	+	3	0
+	+	3	0
+	+	3	0
+	+	11	0
+	+	14	55
+	+	15	1
+	+	24	61
+	+	14	22
+	+	15	10
+	+	24	90
+	+	18	0
+	+	45	12
+	+	46	33
+	+	44	5
+	+	43	0
+	+	46	0
+	+	41	0
+	+	33	38
+	+	33	58
+	+	33	58
+	+	40	29
+	+	33	62
+	+	36	8
+	+	38	1
+	+	37	69
+	+	40	12
+	+	41	0
+	+	50	24
+	+	47	0
+	+	51	18
+	+	7	32
+	+	8	40
+	+	5	30
+	+	14	74
+	+	24	108
+	+	11	23
+	+	11	0
+	+	24	0
+
+> ~/code/dota/database/__Gundo_Preview__
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/code/dota/database/__Gundo__
+	"	6	1
+	.	1	0
+	+	1	0
+
+> /tmp/vim-simpledb-result.txt
+	"	1	0
+
+> ~/.vim/bundle/vim-fugitive/doc/fugitive.txt
+	"	50	48
+
+> ~/code/dota/database/gist:buotex
+	"	4	6
+	.	4	0
+	+	14	0
+	+	1	0
+	+	11	0
+	+	7	0
+	+	4	0
+
+> ~/.vim/bundle/gist-vim/doc/gist-vim.txt
+	"	31	22
+
+> /usr/share/vim/vim74/doc/repeat.txt
+	"	143	43
+
+> /usr/share/vim/vim74/doc/editing.txt
+	"	1059	39
+
+> ~/logs/pgsql
+	"	6785	40
+
+> ~/code/dota/database/output
+	"	4	58383
+	^	3	74759
+	.	656	14
+	+	656	14
+
+> /usr/lib64/python2.7/site-packages/postgres/__init__.py
+	"	194	13
+
+> /usr/lib64/python2.7/urllib2.py
+	"	1249	0
+
+> /usr/lib64/python2.7/urllib.py
+	"	33	8
+
+> gist:7695487/database.markdown
+	"	31	0
+	^	32	0
+	.	33	0
+	+	64	0
+	+	68	0
+	+	1	0
+	+	2	0
+	+	31	2
+	+	31	6
+	+	56	2
+	+	32	0
+	+	33	0
+
+> /usr/share/vim/vim74/doc/windows.txt
+	"	1121	15
+
+> /usr/share/vim/vim74/doc/options.txt
+	"	233	0
+
+> ~/.vim/bundle/vim-simpledb/plugin/simpledb.vim
+	"	22	51
+	^	22	52
+	.	22	52
+	+	23	0
+	+	22	52
+
+> ~/.vim/bundle/vim-simpledb/.git/config
+	"	7	31
+	^	7	32
+	.	7	31
+	+	7	31
+
+> ~/[Vundle] Installer
+	"	26	0
+	.	1	0
+	+	1	0
+
+> ~/Dropbox/dota/[Vundle] Installer
+	"	26	0
+	.	1	0
+	+	26	0
+	+	1	0
+
+> ~/code/dota/database/createTables.py
+	"	1	0
+	^	3	14
+	.	3	13
+	+	2	6
+	+	2	0
+	+	3	13
+
+> ~/Dropbox/dota/database.markdown
+	"	32	0
+	^	48	25
+	.	48	24
+	+	23	3
+	+	55	38
+	+	58	0
+	+	23	2
+	+	53	2
+	+	23	2
+	+	53	2
+	+	23	8
+	+	53	11
+	+	23	3
+	+	55	22
+	+	56	37
+	+	55	37
+	+	56	280
+	+	53	13
+	+	56	25
+	+	58	13
+	+	73	7
+	+	74	17
+	+	75	1
+	+	8	0
+	+	13	39
+	+	16	8
+	+	23	10
+	+	16	30
+	+	15	30
+	+	36	120
+	+	33	1
+	+	34	1
+	+	36	1
+	+	38	1
+	+	35	1
+	+	41	2
+	+	38	52
+	+	41	1
+	+	41	0
+	+	38	2
+	+	39	1
+	+	60	8
+	+	61	2
+	+	68	1
+	+	67	1
+	+	62	111
+	+	63	110
+	+	62	49
+	+	64	48
+	+	56	136
+	+	57	3
+	+	65	98
+	+	36	99
+	+	37	1
+	+	37	39
+	+	42	2
+	+	46	16
+	+	51	3
+	+	37	0
+	+	47	0
+	+	47	1
+	+	46	8
+	+	51	2
+	+	47	0
+	+	43	17
+	+	49	61
+	+	47	114
+	+	49	84
+	+	62	28
+	+	57	134
+	+	65	97
+	+	66	19
+	+	62	26
+	+	47	2
+	+	48	1
+	+	47	16
+	+	35	8
+	+	62	114
+	+	63	16
+	+	66	44
+	+	50	22
+	+	37	20
+	+	43	18
+	+	25	0
+	+	23	2
+	+	30	0
+	+	23	23
+	+	25	0
+	+	29	13
+	+	25	0
+	+	23	0
+	+	25	0
+	+	26	23
+	+	30	0
+	+	2	0
+	+	2	0
+	+	39	1
+	+	1	15
+	+	39	0
+	+	1	0
+	+	44	26
+	+	45	2
+	+	48	24
+
+> ~/cmdline_script
+	"	1	0
+
+> ~/relerror.png
+	"	1	0
+
+> ~/box
+	"	1	0
+
+> ~/doc/papers/icpr/ICPR_latex/latex12.tex
+	"	72	0
+	^	634	1
+	.	32	0
+	+	51	0
+	+	610	0
+	+	609	0
+	+	674	0
+	+	618	0
+	+	13	19
+	+	108	0
+	+	371	0
+	+	55	0
+	+	54	51
+	+	107	46
+	+	16	22
+	+	217	150
+	+	217	150
+	+	217	68
+	+	14	19
+	+	15	19
+	+	637	0
+	+	620	0
+	+	634	0
+	+	87	0
+	+	32	0
+
+> /usr/lib64/python2.7/site-packages/numpy/core/include/numpy/ndarraytypes.h
+	"	648	15
+
+> ~/tmp/multimarkdown.html
+	"	5	55
+	^	5	56
+	.	5	55
+	+	5	55
+
+> /usr/local/lib/node_modules/instant-markdown-d/node_modules/docter/ghf_marked.css
+	"	57	0
+
+> ../summary/DA.tex
+	"	1	0
+
+> ~/Dropbox/uni/Dipl/plan/latex/reports/summary/DA.tex
+	"	33	15
+
+> ~/Dropbox/uni/Dipl/plan/latex/reports/summary/chapter2.tex
+	"	95	0
+
+> ~/doc/papers/icpr/paper.tex
+	"	1	0
+
+> ~/doc/papers/icpr/README
+	"	9	0
+
+> ~/doc/papers/icpr/bare_jrnl.tex
+	"	145	0
+
+> ~/doc/papers/icpr/bare_jrnl
+	"	1	0
+
+> ~/doc/papers/icpr/bare_conf.tex
+	"	193	0
+
+> ~/doc/papers/icpr/bare_adv.tex
+	"	234	0
+
+> ~/Dropbox/dota/test.html
+	"	1	0
+
+> /usr/local/packages/MultiMarkdown-4/Makefile
+	"	59	0
+
+> ~/.vim/ftplugin/python.vim
+	"	10	0
+	^	10	1
+	.	10	0
+	+	10	0
+	+	11	0
+	+	10	0
+
+> ~/.fbtermrc
+	"	1	0
+
+> ~/Dropbox/dota/database.md
+	"	15	0
+
+> ~/Dropbox/dota/database.markdow
+	"	1	0
+
+> ~/Dropbox/dota/test.md
+	"	3	12
+	^	3	13
+	.	3	12
+	+	2	13
+	+	3	12
+
+> ~/packages/MultiMarkdown-4.txz
+	"	5	0
+	.	5	0
+	+	5	0
+
+> /usr/local/packages/MultiMarkdown-4/.git/config
+	"	1	0
+
+> /usr/local/lib/node_modules/instant-markdown-d/node_modules/docter/bin/github-flavored-markdown.rb
+	"	97	22
+	^	106	4
+	.	106	3
+	+	107	20
+	+	102	11
+	+	111	35
+	+	102	11
+	+	102	3
+	+	107	2
+	+	107	6
+	+	107	0
+	+	107	20
+	+	102	15
+	+	107	16
+	+	109	18
+	+	111	16
+	+	102	0
+	+	107	0
+	+	107	9
+	+	107	0
+	+	103	0
+	+	107	0
+	+	102	0
+	+	103	3
+	+	111	0
+	+	111	0
+	+	103	0
+	+	102	0
+	+	110	16
+	+	101	9
+	+	106	3
+
+> ~/code/compareCounting/bayer2/cutHelper.py
+	"	1	0
+
+> ~/code/compareCounting/bayer2/gist:buotex
+	"	1	0
+	.	4	0
+	+	4	0
+
+> /usr/share/vim/vim74/doc/change.txt
+	"	1257	40
+
+> /usr/bin/gvim
+	"	1	0
+
+> ~/code/dota/database/--help
+	"	1	0
+
+> ~/code/dota/database/example
+	"	1	0
+
+> /etc/rc.d/rc.postgres
+	"	2	6
+	^	2	7
+	.	2	6
+	+	6	9
+	+	5	26
+	+	6	52
+	+	4	30
+	+	1	26
+	+	4	49
+	+	1	0
+	+	1	8
+	+	3	0
+	+	2	6
+
+> ~/.config/autostart/google-chrome.desktop
+	"	1	0
+
+> ~/.config/autostart/hplip-systray.desktop
+	"	1	0
+
+> ~/.oh-my-zsh/custom/postgres.zsh
+	"	2	59
+	^	2	60
+	.	2	59
+	+	1	37
+	+	2	59
+
+> ~/Dropbox/dota/postgres.zsh
+	"	1	33
+	^	1	34
+	.	1	33
+	+	1	33
+
+> ~/packages/postgresql-9.3.1.txz
+	"	1336	0
+	.	5	0
+	+	5	0
+
+> /usr/local/lib/node_modules/instant-markdown-d/node_modules/docter/README.md
+	"	38	3
+	^	24	14
+	.	19	0
+	+	19	0
+
+> /usr/local/lib/node_modules/instant-markdown-d/node_modules/docter/blub.html
+	"	281	0
+
+> /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
+	"	49	117
+	^	49	118
+	.	55	0
+	+	76	22
+	+	76	4
+	+	76	26
+	+	76	34
+	+	76	0
+	+	76	0
+	+	76	4
+	+	76	0
+	+	76	0
+	+	76	27
+	+	76	4
+	+	76	4
+	+	76	0
+	+	76	4
+	+	76	2
+	+	76	0
+	+	76	0
+	+	76	0
+	+	76	0
+	+	76	6
+	+	76	26
+	+	76	5
+	+	76	27
+	+	76	26
+	+	76	5
+	+	76	4
+	+	76	4
+	+	76	5
+	+	76	5
+	+	76	4
+	+	76	5
+	+	76	5
+	+	76	4
+	+	76	0
+	+	76	7
+	+	76	4
+	+	76	4
+	+	76	26
+	+	76	0
+	+	76	23
+	+	76	30
+	+	76	5
+	+	76	29
+	+	76	5
+	+	76	5
+	+	76	5
+	+	76	5
+	+	76	25
+	+	76	0
+	+	76	0
+	+	76	6
+	+	76	6
+	+	76	6
+	+	76	0
+	+	74	20
+	+	2	52
+	+	76	4
+	+	76	0
+	+	76	5
+	+	76	6
+	+	76	4
+	+	76	4
+	+	76	4
+	+	54	7
+	+	58	7
+	+	58	7
+	+	52	0
+	+	50	28
+	+	57	9
+	+	58	0
+	+	58	0
+	+	57	0
+	+	76	27
+	+	76	4
+	+	73	0
+	+	72	0
+	+	73	0
+	+	74	0
+	+	75	0
+	+	77	0
+	+	76	0
+	+	76	0
+	+	49	114
+	+	55	9
+	+	55	0
+
+> /usr/local/lib/node_modules/instant-markdown-d/index.html
+	"	32	6
+	.	18	0
+	+	12	0
+	+	12	0
+	+	12	0
+	+	12	0
+	+	12	0
+	+	12	0
+	+	12	0
+	+	12	0
+	+	12	0
+	+	12	0
+	+	12	0
+	+	23	0
+	+	19	8
+	+	12	0
+	+	19	0
+	+	17	0
+	+	17	26
+	+	17	28
+	+	10	0
+	+	17	26
+	+	18	27
+	+	17	42
+	+	18	0
+	+	17	28
+	+	17	27
+	+	18	28
+	+	17	0
+	+	18	0
+
+> ~/.vim/bundle/vim-instant-markdown/after/ftplugin/markdown/instant-markdown.vim
+	"	121	8
+	^	120	9
+	.	120	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	13
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	49
+	+	1	15
+	+	101	17
+	+	101	12
+	+	96	0
+	+	1	0
+	+	1	8
+	+	1	0
+	+	101	0
+	+	101	0
+	+	101	0
+	+	1	17
+	+	1	0
+	+	1	6
+	+	1	27
+	+	1	0
+	+	101	0
+	+	68	0
+	+	12	0
+	+	12	0
+	+	11	0
+	+	68	0
+	+	11	0
+	+	66	32
+	+	33	0
+	+	24	0
+	+	33	0
+	+	24	0
+	+	8	0
+	+	24	0
+	+	9	0
+	+	24	17
+	+	24	0
+	+	28	47
+	+	13	0
+	+	33	0
+	+	68	4
+	+	69	5
+	+	70	0
+	+	24	13
+	+	17	12
+	+	24	9
+	+	17	13
+	+	19	0
+	+	24	0
+	+	24	0
+	+	22	0
+	+	28	49
+	+	24	0
+	+	34	10
+	+	66	4
+	+	67	0
+	+	66	9
+	+	15	18
+	+	22	16
+	+	23	3
+	+	24	0
+	+	32	1
+	+	21	12
+	+	22	0
+	+	66	3
+	+	66	17
+	+	66	25
+	+	66	0
+	+	16	27
+	+	15	19
+	+	19	30
+	+	21	0
+	+	16	11
+	+	66	18
+	+	73	8
+	+	20	0
+	+	25	27
+	+	72	4
+	+	72	4
+	+	92	4
+	+	22	0
+	+	29	2
+	+	30	2
+	+	29	0
+	+	30	2
+	+	23	0
+	+	92	4
+	+	72	0
+	+	72	16
+	+	72	17
+	+	63	18
+	+	72	0
+	+	63	0
+	+	120	0
+
+> ~/.vim/setup/update_instant_markdown
+	"	4	59
+	^	4	60
+	.	4	59
+	+	2	14
+	+	2	14
+	+	2	14
+	+	2	101
+	+	2	101
+	+	2	116
+	+	3	68
+	+	3	68
+	+	3	68
+	+	4	68
+	+	4	68
+	+	4	59
+
+> ~/code/dota/steamodd/steam/api.py
+	"	73	12
+
+> ~/code/dota/database/example2
+	"	1	0
+
+> ~/code/dota/database/[Vundle] Installer
+	"	23	0
+	.	1	0
+	+	1	0
+
+> ~/.zshrc
+	"	85	0
+	^	83	54
+	.	83	0
+	+	73	31
+	+	79	0
+	+	83	0
+
+> ~/code/dota/database/example.py
+	"	8	4
+	^	8	5
+	.	8	4
+	+	6	0
+	+	8	4
+
+> ~/Dropbox/study/Reinelt/PreflowPush.markdown
+	"	14	0
+	.	15	0
+	+	1	0
+	+	33	0
+	+	5	0
+	+	28	17
+	+	28	0
+	+	28	1
+	+	28	33
+	+	28	25
+	+	28	2
+	+	28	19
+	+	28	34
+	+	28	14
+	+	32	0
+	+	28	0
+	+	28	34
+	+	28	27
+	+	28	31
+	+	28	0
+	+	28	27
+	+	28	0
+	+	28	25
+	+	28	0
+	+	28	3
+	+	28	18
+	+	5	39
+	+	28	77
+	+	28	0
+	+	5	17
+	+	28	68
+	+	28	0
+	+	28	0
+	+	28	0
+	+	28	0
+	+	28	0
+	+	28	0
+	+	28	0
+	+	28	0
+	+	6	0
+	+	28	0
+	+	28	0
+	+	11	0
+	+	24	0
+	+	11	1
+	+	15	64
+	+	15	44
+	+	15	38
+	+	15	32
+	+	15	38
+	+	11	1
+	+	5	2
+	+	5	0
+	+	15	41
+	+	15	40
+	+	15	38
+	+	23	0
+	+	15	38
+	+	15	38
+	+	19	0
+	+	24	0
+	+	21	2
+	+	1	0
+	+	18	0
+	+	15	0
+	+	16	0
+	+	15	32
+	+	15	32
+	+	15	0
+	+	15	32
+	+	15	32
+	+	15	32
+	+	15	32
+	+	15	32
+	+	15	32
+	+	15	32
+	+	15	32
+	+	15	32
+	+	15	36
+	+	15	35
+	+	15	36
+	+	15	32
+	+	15	32
+	+	15	0
+	+	15	0
+
+> /usr/share/vim/vim74/doc/eval.txt
+	"	5890	42
+
+> /usr/share/vim/vim74/doc/various.txt
+	"	609	23
+
+> ~/Dropbox/study/Reinelt/blub.markdown
+	"	2	0
+	^	2	0
+	.	1	8
+	+	1	8
+
+> /usr/local/lib/node_modules/instant-markdown-d/PreflowPush.markdown
+	"	1	0
 
 > ~/.vim/setup/instant_markdown
 	"	2	0
@@ -270,70 +1506,6 @@ $,
 	+	55	31
 	+	55	0
 	+	52	0
-
-> ~/Dropbox/study/Reinelt/PreflowPush.markdown
-	"	19	0
-	^	20	0
-	.	21	0
-	+	1	0
-	+	30	0
-	+	4	0
-	+	25	17
-	+	25	0
-	+	25	1
-	+	25	33
-	+	25	25
-	+	25	2
-	+	25	19
-	+	25	34
-	+	25	14
-	+	29	0
-	+	25	0
-	+	25	34
-	+	25	27
-	+	25	31
-	+	25	0
-	+	25	27
-	+	25	0
-	+	25	25
-	+	25	0
-	+	25	3
-	+	25	18
-	+	4	39
-	+	25	77
-	+	25	0
-	+	4	17
-	+	25	68
-	+	25	0
-	+	25	0
-	+	25	0
-	+	25	0
-	+	25	0
-	+	25	0
-	+	25	0
-	+	25	0
-	+	5	0
-	+	25	0
-	+	25	0
-	+	10	0
-	+	21	0
-	+	10	1
-	+	17	32
-	+	18	12
-	+	18	6
-	+	18	0
-	+	18	6
-	+	10	1
-	+	4	2
-	+	4	0
-	+	18	9
-	+	18	8
-	+	18	6
-	+	20	0
-	+	18	6
-	+	18	6
-	+	19	0
-	+	21	0
 
 > ~/.vim/bundle/Docter/bin/github-flavored-markdown.rb
 	"	106	0
@@ -387,87 +1559,8 @@ $,
 	+	7	0
 	+	5	18
 
-> /usr/share/vim/vim74/doc/options.txt
-	"	2636	0
-
 > /usr/lib64/python2.7/re.py
 	"	217	10
-
-> /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d
-	"	57	8
-	.	57	0
-	+	82	22
-	+	83	4
-	+	85	26
-	+	91	34
-	+	82	0
-	+	82	0
-	+	91	4
-	+	91	0
-	+	91	0
-	+	91	27
-	+	91	4
-	+	83	4
-	+	91	0
-	+	85	4
-	+	82	2
-	+	91	0
-	+	85	0
-	+	85	0
-	+	91	0
-	+	83	6
-	+	91	26
-	+	91	5
-	+	91	27
-	+	91	26
-	+	91	5
-	+	85	4
-	+	91	4
-	+	91	5
-	+	91	5
-	+	91	4
-	+	91	5
-	+	91	5
-	+	83	4
-	+	85	0
-	+	83	7
-	+	85	4
-	+	91	4
-	+	91	26
-	+	91	0
-	+	91	23
-	+	91	30
-	+	91	5
-	+	91	29
-	+	91	5
-	+	91	5
-	+	91	5
-	+	91	5
-	+	91	25
-	+	91	0
-	+	91	0
-	+	91	6
-	+	91	6
-	+	91	6
-	+	85	0
-	+	74	20
-	+	2	52
-	+	83	4
-	+	89	0
-	+	84	5
-	+	83	6
-	+	87	4
-	+	90	4
-	+	87	4
-	+	54	7
-	+	58	7
-	+	58	7
-	+	52	0
-	+	50	28
-	+	57	9
-	+	58	0
-	+	58	0
-	+	57	0
 
 > ~/code/testing/python/curl.py
 	"	8	8
@@ -493,185 +1586,11 @@ $,
 	"	372	0
 	^	372	0
 
-> ~/.vim/bundle/vim-instant-markdown/after/ftplugin/markdown/instant-markdown.vim
-	"	1	0
-	^	17	13
-	.	19	30
-	+	1	26
-	+	1	27
-	+	1	47
-	+	101	28
-	+	101	11
-	+	1	32
-	+	101	2
-	+	101	0
-	+	101	0
-	+	1	11
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	7
-	+	101	2
-	+	101	2
-	+	101	0
-	+	101	2
-	+	101	2
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	13
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	49
-	+	1	15
-	+	101	17
-	+	101	12
-	+	96	0
-	+	1	0
-	+	1	8
-	+	1	0
-	+	101	0
-	+	101	0
-	+	101	0
-	+	1	17
-	+	1	0
-	+	1	6
-	+	1	27
-	+	1	0
-	+	101	0
-	+	67	0
-	+	12	0
-	+	12	0
-	+	11	0
-	+	67	0
-	+	11	0
-	+	65	32
-	+	32	0
-	+	24	0
-	+	32	0
-	+	24	0
-	+	8	0
-	+	24	0
-	+	9	0
-	+	24	17
-	+	24	0
-	+	27	47
-	+	13	0
-	+	32	0
-	+	67	4
-	+	68	5
-	+	69	0
-	+	24	13
-	+	17	12
-	+	24	9
-	+	17	13
-	+	19	0
-	+	24	0
-	+	24	0
-	+	22	0
-	+	27	49
-	+	24	0
-	+	33	10
-	+	65	4
-	+	66	0
-	+	65	9
-	+	15	18
-	+	22	16
-	+	23	3
-	+	24	0
-	+	31	1
-	+	20	12
-	+	22	0
-	+	65	3
-	+	65	17
-	+	65	25
-	+	65	0
-	+	16	27
-	+	15	19
-	+	19	30
-
 > /usr/share/vim/vim74/doc/quickfix.txt
 	"	158	6
 
-> /usr/share/vim/vim74/doc/windows.txt
-	"	161	27
-
 > /usr/share/vim/vim74/doc/autocmd.txt
 	"	168	29
-
-> ~/.vimrc
-	"	52	0
-	.	52	0
-	+	85	0
-	+	2	0
-	+	2	0
-	+	44	0
-	+	17	0
-	+	16	2
-	+	19	0
-	+	40	0
-	+	28	14
-	+	29	33
-	+	28	25
-	+	29	29
-	+	28	0
-	+	30	21
-	+	136	0
-	+	31	44
-	+	32	8
-	+	67	0
-	+	45	48
-	+	59	0
-	+	45	0
-	+	60	0
-	+	61	0
-	+	60	0
-	+	61	0
-	+	34	21
-	+	63	11
-	+	40	0
-	+	40	0
-	+	42	29
-	+	42	0
-	+	42	0
-	+	42	0
-	+	45	0
-	+	47	0
-	+	40	24
-	+	40	0
-	+	42	0
-	+	40	0
-	+	39	36
-	+	39	7
-	+	45	0
-	+	48	31
-	+	51	0
-	+	43	22
-	+	52	26
-	+	41	13
-	+	31	0
-	+	75	110
-	+	41	0
-	+	33	0
-	+	46	17
-	+	40	0
-	+	35	7
-	+	37	33
-	+	33	13
-	+	38	0
-	+	33	0
-	+	36	0
-	+	38	20
-	+	75	0
-	+	52	0
 
 > ~/.vim/[Vundle] Installer
 	"	22	0
@@ -695,715 +1614,3 @@ $,
 	^	2	3
 	.	2	2
 	+	2	2
-
-> ~/code/testing/python/[Vundle] Installer
-	"	20	0
-	.	1	0
-	+	1	0
-
-> ~/.vim/ftplugin/python/ipy
-	"	409	0
-
-> ~/.vim/ftplugin/python.vim
-	"	10	0
-	^	10	1
-	.	10	0
-	+	10	0
-	+	11	0
-	+	10	0
-
-> ~/code/testing/curl.py
-	"	1	6
-	^	1	7
-	.	1	6
-	+	1	6
-
-> ~/code/testing/python/webkit.py
-	"	18	23
-	^	18	24
-	.	18	23
-	+	1	12
-	+	20	0
-	+	22	0
-	+	21	4
-	+	18	23
-
-> ~/code/testing/python/test
-	"	1	427
-	^	1	428
-
-> ~/code/testing/python/base64
-	"	1	427
-	^	1	428
-	.	2	0
-	+	1	428
-	+	1	378
-	+	2	0
-
-> /usr/local/lib/node_modules/instant-markdown-d/index.html
-	"	1	5
-	^	19	29
-	.	19	28
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	25	0
-	+	21	8
-	+	12	0
-	+	21	0
-	+	18	0
-	+	18	26
-	+	18	28
-	+	10	0
-	+	16	26
-	+	19	27
-	+	18	42
-	+	19	0
-	+	17	28
-	+	16	27
-	+	19	28
-
-> /usr/local/lib/node_modules/instant-markdown-d/__Gundo_Preview__
-	"	1	0
-	.	1	0
-	+	1	0
-
-> /usr/local/lib/node_modules/instant-markdown-d/__Gundo__
-	"	32	1
-	.	1	0
-	+	1	0
-
-> ~/code/compareCounting/bayer2/count_bayer.py
-	"	53	4
-	^	63	29
-	.	63	28
-	+	19	0
-	+	9	27
-	+	8	10
-	+	15	18
-	+	17	32
-	+	19	0
-	+	20	29
-	+	37	27
-	+	37	24
-	+	37	22
-	+	37	25
-	+	42	3
-	+	46	0
-	+	42	17
-	+	65	21
-	+	66	18
-	+	37	0
-	+	44	3
-	+	45	7
-	+	44	22
-	+	42	23
-	+	45	38
-	+	65	24
-	+	66	22
-	+	37	0
-	+	37	0
-	+	45	0
-	+	43	3
-	+	63	28
-
-> ~/code/compareCounting/bayer2/DebuggerWatch
-	"	1	0
-	^	7	13
-	.	1	0
-	+	1	0
-	+	7	12
-	+	1	0
-
-> ~/code/compareCounting/bayer2/DebuggerStack
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/code/compareCounting/bayer2/DebuggerStatus
-	"	5	0
-	.	5	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	5	0
-
-> ~/.vim/bundle/vdebug/doc/Vdebug.txt
-	"	1118	4
-
-> ~/.vim/bundle/vdebug/plugin/vdebug.vim
-	"	1	0
-
-> ~/code/compareCounting/bayer2/count_bayer2.py
-	"	29	0
-
-> /usr/local/packages/v8/Makefile
-	"	207	43
-
-> /usr/local/packages/v8/build/README.txt
-	"	4	0
-
-> /usr/share/applications/google-chrome.desktop
-	"	221	0
-
-> ~/.oh-my-zsh/custom/chrome.zsh
-	"	1	35
-	^	1	36
-	.	1	35
-	+	1	35
-
-> ~/.vim/bundle/vim-instant-markdown/.git/config
-	"	7	15
-	^	7	32
-	.	7	31
-	+	7	31
-
-> ~/.vim/bundle/vim-instant-markdown/after/ftplugin/markdown/__Gundo_Preview__
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/.vim/bundle/vim-instant-markdown/after/ftplugin/markdown/__Gundo__
-	"	12	1
-	.	1	0
-	+	1	0
-
-> ~/Dropbox/study/Reinelt/instant-markdown.vim
-	"	1	0
-
-> /usr/share/vim/vim73/doc/eval.txt
-	"	5534	0
-
-> ~/.vim/bundle/vim-instant-markdown/after/ftplugin/markdown/encode.py
-	"	2	13
-	^	2	14
-	.	2	13
-	+	1	10
-	+	2	13
-
-> ~/[Vundle] Installer
-	"	19	0
-	.	1	0
-	+	19	0
-	+	1	0
-
-> after/ftplugin/markdown/instant-markdown.vim
-	"	1	0
-
-> ~/Dropbox/study/Reinelt/[Vundle] Installer
-	"	18	0
-	.	1	0
-	+	1	0
-
-> ~/.vim/bundle/vim-unimpaired/plugin/unimpaired.vim
-	"	29	0
-	.	1	0
-	+	1	0
-
-> ~/code/ilastik-all/ilastik/ilastik/applets/counting/countingGui.py
-	"	1678	4
-	^	23	2
-	.	23	0
-	+	23	0
-
-> ~/code/ilastik-all/ilastik/ilastik/applets/counting/__init__.py
-	"	1	0
-
-> ~/code/ilastik-all/ilastik/ilastik/applets/counting/opCounting
-	"	1	0
-
-> ~/code/ilastik-all/ilastik/ilastik/applets/counting/opCounting.py
-	"	6	0
-	.	151	0
-	+	151	0
-
-> ~/code/ilastik-all/ilastik/ilastik/applets/counting/[Vundle] Installer
-	"	17	0
-	.	1	0
-	+	1	0
-
-> ~/code/ilastik-all/ilastik/ilastik/applets/counting/-MiniBufExplorer-
-	"	1	36
-	.	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-
-> ~/code/ilastik-all/ilastik/ilastik/applets/counting/countingApplet.py
-	"	1	0
-
-> ~/doc/memo/keys
-	"	1	38
-
-> ~/-MiniBufExplorer-
-	"	1	0
-	.	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-
-> ~/code/ilastik-all/ilastik/ilastik/applets/counting/countingsvr.py
-	"	550	0
-	.	558	0
-	+	565	0
-	+	539	8
-	+	539	8
-	+	539	0
-	+	539	0
-	+	539	16
-	+	539	16
-	+	539	19
-	+	539	19
-	+	539	19
-	+	539	23
-	+	539	0
-	+	563	0
-	+	551	38
-	+	551	0
-	+	542	0
-	+	489	34
-	+	483	0
-	+	484	53
-	+	492	19
-	+	489	0
-	+	578	19
-	+	574	0
-	+	570	7
-	+	571	0
-	+	570	2
-	+	571	7
-	+	572	7
-	+	573	11
-	+	570	30
-	+	578	8
-	+	368	65
-	+	696	12
-	+	410	0
-	+	449	3
-	+	448	40
-	+	430	0
-	+	411	0
-	+	410	41
-	+	412	0
-	+	387	28
-	+	387	0
-	+	387	25
-	+	387	24
-	+	387	11
-	+	387	43
-	+	387	18
-	+	387	23
-	+	351	82
-	+	386	15
-	+	385	0
-	+	387	0
-	+	351	0
-	+	338	75
-	+	334	57
-	+	335	117
-	+	352	67
-	+	371	56
-	+	559	44
-	+	559	46
-	+	592	0
-	+	591	13
-	+	645	4
-	+	651	0
-	+	645	31
-	+	649	0
-	+	649	13
-	+	650	12
-	+	652	0
-	+	651	19
-	+	559	0
-	+	556	32
-	+	591	36
-	+	647	23
-	+	649	44
-	+	650	77
-	+	555	24
-	+	556	33
-	+	646	62
-	+	649	0
-	+	376	26
-	+	376	20
-	+	371	19
-	+	352	47
-	+	371	28
-	+	376	47
-	+	376	57
-	+	376	51
-	+	376	17
-	+	376	11
-	+	376	11
-	+	376	11
-	+	646	43
-	+	649	27
-	+	650	35
-	+	559	0
-	+	559	40
-	+	559	0
-	+	559	33
-	+	558	0
-
-> ~/.emacs.d/-MiniBufExplorer-
-	"	1	0
-	.	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-
-> ~/.vim/bundle/vim-airline/doc/airline.txt
-	"	351	0
-
-> ~/.emacs.d/[Vundle] Installer
-	"	17	0
-	.	1	0
-	+	1	0
-
-> ~/.emacs.d/bxu.el
-	"	2	22
-	^	2	23
-	.	2	22
-	+	1	0
-	+	2	22
-
-> ~/.emacs.d/init.el
-	"	18	0
-
-> ~/.emacs.d/README
-	"	18	46
-
-> ~/.emacs.d/READMe
-	"	1	0
-
-> ~/code/testing/README.markdown
-	"	47	18
-	^	47	19
-	.	47	18
-	+	49	0
-	+	47	18
-
-> ~/code/testing/[Vundle] Installer
-	"	16	0
-	.	1	0
-	+	1	0
-
-> ~/code/testing/-MiniBufExplorer-
-	"	1	11
-	.	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-
-> ~/.vim/bundle/vim-rails/blub.html
-	"	1	0
-
-> ~/.vim/bundle/vim-rails/README.markdown
-	"	15	0
-
-> ~/bin/mkpackage
-	"	11	1
-	^	11	2
-	.	11	1
-	+	1	0
-	+	7	0
-	+	10	22
-	+	10	1
-	+	8	36
-	+	10	0
-	+	8	32
-	+	10	0
-	+	11	1
-
-> ~/.vim/bundle/vdebug/plugin/python/vdebug/dbgp.py
-	"	404	25
-	^	194	13
-	.	194	12
-	+	411	8
-	+	412	0
-	+	411	8
-	+	412	8
-	+	411	19
-	+	411	0
-	+	196	15
-	+	196	0
-	+	194	12
-
-> ~/.vim/bundle/vdebug/plugin/python/start_vdebug.py
-	"	1	8
-
-> ~/.vim/bundle/vdebug/README.md
-	"	156	0
-
-> ~/.vim/bundle/vdebug/[Vundle] Installer
-	"	16	0
-	.	1	0
-	+	1	0
-
-> ~/.vim/bundle/DBGPavim/plugin/dbgpavim.py
-	"	54	2
-
-> ~/.vim/bundle/DBGPavim/doc/dbgpavim.txt
-	"	64	0
-
-> ~/code/compareCounting/bayer2/-MiniBufExplorer-
-	"	1	18
-	.	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-
-> ~/code/compareCounting/bayer2/ControlP
-	"	2	0
-	.	2	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	2	0
-
-> ~/.vim/bundle/DBGPavim/plugin/dbgpavim.vim
-	"	117	0
-
-> ~/.vim/bundle/-MiniBufExplorer-
-	"	1	26
-	.	2	0
-	+	2	0
-
-> ~/code/[Vundle] Installer
-	"	16	0
-	.	1	0
-	+	1	0
-
-> ~/code/-MiniBufExplorer-
-	"	1	11
-	.	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-
-> ~/.oh-my-zsh/custom/pydbpp.zsh
-	"	1	0
-	^	1	18
-	.	3	0
-	+	1	12
-	+	2	98
-	+	1	87
-	+	2	0
-	+	3	0
-
-> ~/.zshrc
-	"	83	0
-	^	83	54
-	.	83	0
-	+	73	31
-	+	79	0
-	+	83	0
-
-> ~/code/ilastik-all/ilastik/ilastik/applets/counting/__Gundo_Preview__
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/code/ilastik-all/ilastik/ilastik/applets/counting/__Gundo__
-	"	8	1
-	.	1	0
-	+	1	0
-
-> /mnt/vm/[Vundle] Installer
-	"	16	0
-	.	1	0
-	+	1	0
-
-> /mnt/vm/-MiniBufExplorer-
-	"	1	11
-	.	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-	+	2	0
-
-> ~/code/ilastik-all/ilastik/ilastik/applets/counting/ControlP
-	"	10	0
-	.	2	0
-	+	1	0
-	+	2	0
-
-> ~/code/ilastik-all/ilastik/qp.lp
-	"	11	36
-
-> /tmp/v75bGAU/0.fugitiveblame
-	"	45	0
-
-> ~/.vim/bundle/ControlP
-	"	1	0
-	.	2	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	2	0
-
-> ~/.vim/bundle/[Vundle] Installer
-	"	13	0
-	.	1	0
-	+	68	0
-	+	57	0
-	+	46	0
-	+	35	0
-	+	24	0
-	+	13	0
-	+	1	0
-
-> /tmp/vTJK8mr/2
-	"	1	0
-
-> /tmp/vmyEaTi/1
-	"	1	0
-
-> /tmp/vbEoWSZ/8
-	"	5	0
-
-> ~/.vim/.gitignore
-	"	5	13
-	^	5	14
-	.	5	0
-	+	5	0
-
-> /etc/fstab
-	"	1	0
-	^	16	14
-	.	16	13
-	+	16	13

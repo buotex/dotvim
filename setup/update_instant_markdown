@@ -1,0 +1,5 @@
+#!/bin/sh
+cp /usr/local/lib/node_modules/instant-markdown-d/node_modules/docter/bin/github-flavored-markdown.rb /home/bxu/.vim/bundle/Docter/bin/github-flavored-markdown.rb
+cp /usr/local/lib/node_modules/instant-markdown-d/instant-markdown-d /home/bxu/.vim/bundle/instant-markdown-d/instant-markdown-d
+cp /usr/local/lib/node_modules/instant-markdown-d/index.html /home/bxu/.vim/bundle/instant-markdown-d/index.html
+

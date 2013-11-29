@@ -24,18 +24,22 @@ Bundle 'tpope/vim-rails.git'
 " vim-scripts repos
 Bundle 'L9'
 Bundle 'FuzzyFinder'
-Bundle 'vim-scripts/netrw.vim'
+Bundle 'eiginn/netrw'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-markdown'
 Bundle 'sjl/gundo.vim'
 Bundle 'bling/vim-airline'
+Bundle 'ervandew/supertab'
 Bundle 'joonty/vdebug'
 Bundle 'davidhalter/jedi-vim'
+Bundle 'mattn/webapi-vim'
+Bundle 'mattn/gist-vim'
 Bundle 'buotex/vim-instant-markdown'
 Bundle 'buotex/instant-markdown-d'
 Bundle 'buotex/Docter'
+Bundle 'buotex/vim-simpledb'
 
 
 "airline configuration"
@@ -51,9 +55,9 @@ let g:airline_symbols.space = "\ua0""
 
 nnoremap <F2> :GundoToggle<CR>
 
-
-
-
+let g:jedi#popup_on_dot = 0
+let g:gist_detect_filetype = 1
+let g:gist_get_multiplefile=1
 
 
 if $TERM == "linux" 
@@ -85,7 +89,8 @@ inoremap <C-Up> <C-o><C-W>k
 
 map <C-PageUp> :tabp <CR>
 map <C-PageDown> :tabn <CR>
-cmap w!! %!sudo tee > /dev/null %
+cmap w!! w !sudo tee > /dev/null %
+"vmap <C-c> '<,'>w !xclip -selection clipboard
 nmap ,p :r ~/.buffer <CR>
 nmap <Space> j
 vmap <Space> j
