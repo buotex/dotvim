@@ -1,6 +1,6 @@
 set nocompatible
 syntax on
-filetype plugin indent on
+filetype off
 
 "noremap <C-N> <Left>
 "noremap <C-E> <Down>
@@ -33,14 +33,22 @@ Bundle 'sjl/gundo.vim'
 Bundle 'bling/vim-airline'
 Bundle 'ervandew/supertab'
 Bundle 'joonty/vdebug'
-Bundle 'davidhalter/jedi-vim'
+"Bundle 'davidhalter/jedi-vim'
 Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
+Bundle 'mattn/calendar-vim'
+Bundle 'jmcantrell/vim-journal'
 Bundle 'buotex/vim-instant-markdown'
 Bundle 'buotex/instant-markdown-d'
 Bundle 'buotex/Docter'
 Bundle 'buotex/vim-simpledb'
+Bundle 'wakatime/vim-wakatime'
+Bundle 'Valloric/YouCompleteMe'
 
+filetype plugin indent on
+let g:journal_directory = "~/Dropbox/ruhoh-site/posts/journal"
+let g:journal_extension = "md"
+let g:instant_markdown_autostart = 0
 
 "airline configuration"
 let g:airline#extensions#tabline#enabled = 1
@@ -55,7 +63,7 @@ let g:airline_symbols.space = "\ua0""
 
 nnoremap <F2> :GundoToggle<CR>
 
-let g:jedi#popup_on_dot = 0
+"let g:jedi#popup_on_dot = 0
 let g:gist_detect_filetype = 1
 let g:gist_get_multiplefile=1
 
@@ -74,8 +82,8 @@ endif
 set t_Co=256
 
 
-nnoremap  <silent>   <tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>
-nnoremap  <silent> <s-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
+nnoremap  <silent>   <c-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>
+nnoremap  <silent> <c-s-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
 
 noremap <C-Down> <C-W>j
 noremap <C-Right> <C-W>l
