@@ -9,8 +9,16 @@ filetype off
 "noremap <C-Y> <PageDown>
 "noremap <C-L> <PageUp>
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+
+if has('win32') || has('win64')
+  set rtp+=~/vimfiles/bundle/vundle/
+  call vundle#rc('$HOME/vimfiles/bundle/')
+else
+  " Usual quickstart instructions
+  set rtp+=~/.vim/bundle/vundle/
+  call vundle#rc()
+endif
+
 
 " let Vundle manage Vundle
 " required! 
@@ -47,7 +55,7 @@ Bundle 'Valloric/YouCompleteMe'
 
 filetype plugin indent on
 let g:journal_directory = "~/Dropbox/ruhoh-site/posts/journal"
-let g:journal_extension = "md"
+let g:journal_extension = "markdown"
 let g:instant_markdown_autostart = 0
 
 "airline configuration"
@@ -62,6 +70,8 @@ let g:airline_symbols.space = "\ua0""
 "end airline configuration"
 
 nnoremap <F2> :GundoToggle<CR>
+
+set guifont=Terminus
 
 "let g:jedi#popup_on_dot = 0
 let g:gist_detect_filetype = 1
@@ -145,39 +155,37 @@ map <F6> :setlocal spell spelllang=en_us <CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""'
 "folders
-if isdirectory($HOME . '/.vim/backup') == 0
-  :silent !mkdir -p ~/.vim/backup >/dev/null 2>&1
+if isdirectory($HOME . '/dump/vim-backup') == 0
+  :silent !mkdir -p ~/dump/vim-backup >/dev/null 2>&1
 endif
 set backupdir-=.
-set backupdir+=.
-set backupdir-=~/
-set backupdir^=~/.vim/backup/
-set backupdir^=./.vim-backup/
+set backupdir=~/dump/vim-backup/
+"set backupdir^=./.vim-backup/
 set backup
 
 " Save your swp files to a less annoying place than the current directory.
 " If you have .vim-swap in the current directory, it'll use that.
 " Otherwise it saves it to ~/.vim/swap, ~/tmp or .
-if isdirectory($HOME . '/.vim/swap') == 0
-  :silent !mkdir -p ~/.vim/swap >/dev/null 2>&1
+if isdirectory($HOME . '/dump/vim-swap') == 0
+  :silent !mkdir -p ~/dump/vim-swap >/dev/null 2>&1
 endif
-set directory=./.vim-swap//
-set directory+=~/.vim/swap//
-set directory+=~/tmp//
-set directory+=.
+"set directory=./.vim-swap//
+set directory=~/dump/vim-swap/
+"set directory+=~/tmp//
+"set directory+=.
 " viminfo stores the the state of your previous editing session
-set viminfo+=n~/.vim/viminfo
+set viminfo+=n~/dump/viminfo
 
 if exists("+undofile")
   " undofile - This allows you to use undos after exiting and restarting
   " This, like swap and backups, uses .vim-undo first, then ~/.vim/undo
   " :help undo-persistence
   " This is only present in 7.3+
-  if isdirectory($HOME . '/.vim/undo') == 0
-    :silent !mkdir -p ~/.vim/undo > /dev/null 2>&1
+  if isdirectory($HOME . '/dump/vim-undo') == 0
+    :silent !mkdir -p ~/dump/vim-undo > /dev/null 2>&1
   endif
-  set undodir=./.vim-undo//
-  set undodir+=~/.vim/undo//
+  "set undodir=./.vim-undo//
+  set undodir=~/dump/vim-undo/
   set undofile
 endif
 
