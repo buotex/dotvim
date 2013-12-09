@@ -48,15 +48,15 @@ Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
 Bundle 'mattn/calendar-vim'
 Bundle 'jmcantrell/vim-journal'
-Bundle 'buotex/vim-instant-markdown'
-Bundle 'buotex/instant-markdown-d'
+"Bundle 'buotex/vim-instant-markdown'
+"Bundle 'buotex/instant-markdown-d'
 Bundle 'buotex/Docter'
 Bundle 'buotex/vim-simpledb'
 Bundle 'wakatime/vim-wakatime'
 Bundle 'Valloric/YouCompleteMe'
 
 filetype plugin indent on
-let g:journal_directory = "~/Dropbox/ruhoh-site/posts/journal"
+let g:journal_directory = "~/blog/posts/journal"
 let g:journal_extension = "markdown"
 let g:instant_markdown_autostart = 0
 let g:vim_markdown_initial_foldlevel = 3

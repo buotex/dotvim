@@ -13,6 +13,21 @@ function! PostHeader()
   put! = '{'
 endfunc
 
+function HasHeader()
+  let date = strftime("%F")
+  let l3=getline(3)
+  if l3[:8] is# '  "date":'
+    3s/\d\{4}-\d\{2}-\d\{2}/\=date/
+  else
+    1call PostHeader()
+    exe 'normal 0G'
+  endif
+endfunction
+
+augroup markdownHeader
+  autocmd!
+  autocmd VimEnter * call HasHeader()
+augroup END
 
 setlocal textwidth=80
 setlocal tabstop=2
