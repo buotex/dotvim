@@ -1,5 +1,6 @@
 function! PostHeader()
   let date = strftime("%F")
+  put! = ''
   put! = '}'
   put! = '  ]'
   put! = '    '

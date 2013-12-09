@@ -36,10 +36,12 @@ Bundle 'eiginn/netrw'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-unimpaired'
-Bundle 'tpope/vim-markdown'
+"Bundle 'tpope/vim-markdown'
+"Bundle 'rcmdnk/vim-markdown'
+Bundle 'buotex/vim-markdown'
 Bundle 'sjl/gundo.vim'
 Bundle 'bling/vim-airline'
-Bundle 'ervandew/supertab'
+"Bundle 'ervandew/supertab'
 Bundle 'joonty/vdebug'
 "Bundle 'davidhalter/jedi-vim'
 Bundle 'mattn/webapi-vim'
@@ -57,6 +59,7 @@ filetype plugin indent on
 let g:journal_directory = "~/Dropbox/ruhoh-site/posts/journal"
 let g:journal_extension = "markdown"
 let g:instant_markdown_autostart = 0
+let g:vim_markdown_initial_foldlevel = 3
 
 "airline configuration"
 let g:airline#extensions#tabline#enabled = 1
