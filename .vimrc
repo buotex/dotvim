@@ -31,10 +31,9 @@ Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'tpope/vim-rails.git'
 " vim-scripts repos
 Bundle 'L9'
-Bundle 'FuzzyFinder'
+"Bundle 'FuzzyFinder'
 Bundle 'eiginn/netrw'
 Bundle 'kien/ctrlp.vim'
-Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-unimpaired'
 "Bundle 'tpope/vim-markdown'
 "Bundle 'rcmdnk/vim-markdown'
@@ -42,21 +41,21 @@ Bundle 'buotex/vim-markdown'
 Bundle 'sjl/gundo.vim'
 Bundle 'bling/vim-airline'
 "Bundle 'ervandew/supertab'
-Bundle 'joonty/vdebug'
+"Bundle 'joonty/vdebug'
 "Bundle 'davidhalter/jedi-vim'
 Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
 Bundle 'mattn/calendar-vim'
 Bundle 'jmcantrell/vim-journal'
-Bundle 'buotex/vim-instant-markdown'
-Bundle 'buotex/instant-markdown-d'
-Bundle 'buotex/Docter'
+"Bundle 'buotex/vim-instant-markdown'
+"Bundle 'buotex/instant-markdown-d'
+"Bundle 'buotex/Docter'
 Bundle 'buotex/vim-simpledb'
-Bundle 'wakatime/vim-wakatime'
+"Bundle 'wakatime/vim-wakatime'
 Bundle 'Valloric/YouCompleteMe'
 
 filetype plugin indent on
-let g:journal_directory = "~/Dropbox/ruhoh-site/posts/journal"
+let g:journal_directory = "~/blog/posts/journal"
 let g:journal_extension = "markdown"
 let g:instant_markdown_autostart = 0
 let g:vim_markdown_initial_foldlevel = 3

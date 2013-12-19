@@ -20,5 +20,4 @@ setlocal softtabstop=2
 setlocal shiftwidth=2
 setlocal smarttab
 
-map <F5> :InstantMarkdown<CR>
 map <F3> :call PostHeader()<CR>
