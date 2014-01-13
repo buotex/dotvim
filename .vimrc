@@ -35,6 +35,7 @@ Bundle 'L9'
 Bundle 'eiginn/netrw'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-unimpaired'
+Bundle 'tpope/vim-surround'
 "Bundle 'tpope/vim-markdown'
 "Bundle 'rcmdnk/vim-markdown'
 Bundle 'buotex/vim-markdown'
@@ -112,8 +113,6 @@ map <C-PageDown> :tabn <CR>
 cmap w!! w !sudo tee > /dev/null %
 "vmap <C-c> '<,'>w !xclip -selection clipboard
 nmap ,p :r ~/.buffer <CR>
-nmap <Space> j
-vmap <Space> j
 
 set timeout timeoutlen=150
 command C :nohls
@@ -208,10 +207,10 @@ map i <right>
 " in the way of hjkl (and E for J)
 noremap k n
 noremap K N
-noremap u i
-noremap U I
 noremap l u
 noremap L U
+noremap u i
+noremap U I
 noremap N J
 noremap E K
 noremap I L

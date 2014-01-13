@@ -40,3 +40,6 @@ setlocal shiftwidth=2
 setlocal smarttab
 
 map <F3> :call PostHeader()<CR>
+
+inoremap <Leader>! ![]({{urls.media}})<Esc>i
+inoremap <Leader>[ []({{urls.media}})<Esc>i
