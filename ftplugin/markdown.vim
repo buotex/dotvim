@@ -33,7 +33,7 @@ endfunction
 "augroup END
 autocmd Filetype markdown call HasHeader()
 
-setlocal textwidth=80
+setlocal textwidth=120
 setlocal tabstop=2
 setlocal softtabstop=2
 setlocal shiftwidth=2
@@ -43,3 +43,7 @@ map <F3> :call PostHeader()<CR>
 
 inoremap <Leader>! ![]({{urls.media}})<Esc>i
 inoremap <Leader>[ []({{urls.media}})<Esc>i
+inoremap <Leader>d <details><summary></summary><img src="{{urls.media}}/"></details><Esc>T"<bs>i
+inoremap <Leader>$ $$<Esc>p`]<Esc>a$$
+inoremap $ $$
+

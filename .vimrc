@@ -27,7 +27,7 @@ Bundle 'gmarik/vundle'
 
 Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+"Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'tpope/vim-rails.git'
 " vim-scripts repos
 Bundle 'L9'
@@ -207,10 +207,8 @@ map i <right>
 " in the way of hjkl (and E for J)
 noremap k n
 noremap K N
-noremap l u
-noremap L U
-noremap u i
-noremap U I
+noremap l i
+noremap L I
 noremap N J
 noremap E K
 noremap I L
