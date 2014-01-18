@@ -53,13 +53,21 @@ Bundle 'jmcantrell/vim-journal'
 "Bundle 'buotex/Docter'
 Bundle 'buotex/vim-simpledb'
 "Bundle 'wakatime/vim-wakatime'
-Bundle 'Valloric/YouCompleteMe'
+"Bundle 'Valloric/YouCompleteMe'
+Bundle "MarcWeber/vim-addon-mw-utils"
+"Bundle "tomtom/tlib_vim"
+"Bundle "garbas/vim-snipmate"
+Bundle "MarcWeber/ultisnips"
+Bundle "buotex/vim-snippets"
 
 filetype plugin indent on
+set confirm
+
 let g:journal_directory = "~/blog/posts/journal"
 let g:journal_extension = "markdown"
 let g:instant_markdown_autostart = 0
 let g:vim_markdown_initial_foldlevel = 3
+let g:always_use_first_snippet = 1
 
 "airline configuration"
 let g:airline#extensions#tabline#enabled = 1
@@ -114,7 +122,7 @@ cmap w!! w !sudo tee > /dev/null %
 "vmap <C-c> '<,'>w !xclip -selection clipboard
 nmap ,p :r ~/.buffer <CR>
 
-set timeout timeoutlen=150
+set timeout timeoutlen=250
 command C :nohls
 
 colorscheme wombat
@@ -193,16 +201,20 @@ endif
 
 "
 "
-imap <c-n> <cr>
-cmap <c-n> <cr>
+imap <c-n> <NL>
+cmap <c-n> <NL>
 inoremap <c-j> <c-n>
 cnoremap <c-j> <c-n>
 
 " rotate some keys about to get qwerty "hjkl" back for movement
-map n <down>
-map e <up>
-map i <right>
+noremap n <down>
+noremap e <up>
+noremap i <right>
 
+noremap! <esc>h <left>
+noremap! <esc>n <down>
+noremap! <esc>e <up>
+noremap! <esc>i <right>
 " move these keys to their qwerty positions because they are
 " in the way of hjkl (and E for J)
 noremap k n
@@ -232,3 +244,22 @@ cmap <c-h> <BS>
 
 " this nerdtree mapping interferes with movement
 let g:NERDTreeMapOpenExpl = "j"
+
+"Konami go!
+inoremap <up> <nop>
+noremap <up> <nop>
+inoremap <down> <nop>
+noremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+noremap <left> <nop>
+noremap <right> <nop>
+"B A START"
+"inoremap <esc> <nop>
+nnoremap <Space> i
+"Disable up / down for ycm
+let g:ycm_key_list_select_completion = ['<TAB>']
+let g:ycm_key_list_previous_completion = ['<S-TAB>']
+
+let g:UltiSnipsJumpForwardTrigger="<c-n>"
+let g:UltiSnipsJumpBackwardTrigger="<c-e>"

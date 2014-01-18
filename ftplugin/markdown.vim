@@ -6,10 +6,10 @@ function! PostHeader()
   put! = '    '
   put! = '  \"tags\": ['
   put! = '  ],'
-  put! = '    '
+  put! = '    \"unsorted\"'
   put! = '  \"categories\": ['
   put! = '  \"date\": \"'.date.'\",'
-  put! = '  \"title\": \"\",'
+  put! = '  \"title\": \"Placeholder\",'
   put! = '{'
 endfunc
 
@@ -33,7 +33,7 @@ endfunction
 "augroup END
 autocmd Filetype markdown call HasHeader()
 
-setlocal textwidth=120
+setlocal textwidth=100
 setlocal tabstop=2
 setlocal softtabstop=2
 setlocal shiftwidth=2
