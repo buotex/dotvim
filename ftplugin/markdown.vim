@@ -1,16 +1,5 @@
-function! PostHeader()
-  let date = strftime("%F")
-  put! = ''
-  put! = '}'
-  put! = '  ]'
-  put! = '    '
-  put! = '  \"tags\": ['
-  put! = '  ],'
-  put! = '    \"unsorted\"'
-  put! = '  \"categories\": ['
-  put! = '  \"date\": \"'.date.'\",'
-  put! = '  \"title\": \"Placeholder\",'
-  put! = '{'
+function! PostHeadert()
+exe "normal aheader\<Tab>"
 endfunc
 
 function! HasHeader()
@@ -23,7 +12,6 @@ function! HasHeader()
     3s/\d\{4}-\d\{2}-\d\{2}/\=date/
   else
     1call PostHeader()
-    exe 'normal 0G'
   endif
 endfunction
 
@@ -46,4 +34,5 @@ inoremap <Leader>[ []({{urls.media}})<Esc>i
 inoremap <Leader>d <details><summary></summary><img src="{{urls.media}}/"></details><Esc>T"<bs>i
 inoremap <Leader>$ $$<Esc>p`]<Esc>a$$
 inoremap $ $$
+inoremap – -
 
