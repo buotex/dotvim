@@ -84,6 +84,19 @@ if !exists('g:airline_symbols')
 let g:airline_symbols.space = "\ua0""
 "end airline configuration"
 
+"Pomodoro configuration
+" Duration of a pomodoro in minutes (default: 25)
+let g:pomodoro_time_work = 25
+
+" Duration of a break in minutes (default: 5)
+let g:pomodoro_time_slack = 5 
+"
+" " Log completed pomodoros, 0 = False, 1 = True (default: 0)
+let g:pomodoro_do_log = 1
+"
+" " Path to the pomodoro log file (default: /tmp/pomodoro.log)
+let g:pomodoro_log_file = "~/media/pomodoro.log"
+
 nnoremap <F2> :GundoToggle<CR>
 
 set guifont=Terminus
@@ -133,9 +146,10 @@ cmap w!! w !sudo tee > /dev/null %
 nmap ,p :r ~/.buffer <CR>
 
 set timeout timeoutlen=250
+set hidden
 command C :nohls
 
-colorscheme distinguished 
+colorscheme wombat256mod
 set ssop-=options
 "set ssop-=folds
 set ssop-=blank
