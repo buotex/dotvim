@@ -1,4 +1,4 @@
-function! PostHeadert()
+function! PostHeader()
 exe "normal aheader\<Tab>"
 endfunc
 
@@ -34,5 +34,4 @@ inoremap <Leader>[ []({{urls.media}})<Esc>i
 inoremap <Leader>d <details><summary></summary><img src="{{urls.media}}/"></details><Esc>T"<bs>i
 inoremap <Leader>$ $$<Esc>p`]<Esc>a$$
 inoremap $ $$
-inoremap – -
 
