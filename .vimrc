@@ -40,7 +40,11 @@ Bundle 'tpope/vim-surround'
 "Bundle 'rcmdnk/vim-markdown'
 Bundle 'buotex/vim-markdown'
 Bundle 'sjl/gundo.vim'
-Bundle 'bling/vim-airline'
+if has('clientserver')
+Bundle 'pydave/AsyncCommand'
+Bundle 'mnick/vim-pomodoro'
+endif
+Bundle 'buotex/vim-airline'
 "Bundle 'ervandew/supertab'
 "Bundle 'joonty/vdebug'
 "Bundle 'davidhalter/jedi-vim'
@@ -59,7 +63,6 @@ Bundle "MarcWeber/vim-addon-mw-utils"
 "Bundle "garbas/vim-snipmate"
 Bundle "MarcWeber/ultisnips"
 Bundle "buotex/vim-snippets"
-
 filetype plugin indent on
 set confirm
 
@@ -72,6 +75,7 @@ let g:always_use_first_snippet = 1
 "airline configuration"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+"let g:airline#extensions#pomodoro#enabled=1
 set ttimeoutlen=50
 set laststatus=2
 if !exists('g:airline_symbols')
@@ -83,6 +87,12 @@ let g:airline_symbols.space = "\ua0""
 nnoremap <F2> :GundoToggle<CR>
 
 set guifont=Terminus
+set guicursor=n-v-c:block-Cursor-blinkon0
+set guicursor+=ve:ver35-Cursor
+set guicursor+=o:hor50-Cursor
+set guicursor+=i-ci:ver25-Cursor
+set guicursor+=r-cr:hor20-Cursor
+set guicursor+=sm:block-Cursor-blinkwait175-blinkoff150-blinkon175
 
 "let g:jedi#popup_on_dot = 0
 let g:gist_detect_filetype = 1
@@ -125,7 +135,7 @@ nmap ,p :r ~/.buffer <CR>
 set timeout timeoutlen=250
 command C :nohls
 
-colorscheme wombat
+colorscheme distinguished 
 set ssop-=options
 "set ssop-=folds
 set ssop-=blank
@@ -142,6 +152,7 @@ set incsearch
 set cuc
 set cul
 set number
+set relativenumber
 set noshowmatch
 let loaded_matchparen=1
 map ,e :e <C-R>=expand("%:p:h") . "/" <CR>
