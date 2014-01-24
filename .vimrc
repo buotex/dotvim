@@ -42,7 +42,7 @@ Bundle 'buotex/vim-markdown'
 Bundle 'sjl/gundo.vim'
 if has('clientserver')
 Bundle 'pydave/AsyncCommand'
-Bundle 'mnick/vim-pomodoro'
+Bundle 'buotex/vim-pomodoro'
 endif
 Bundle 'buotex/vim-airline'
 "Bundle 'ervandew/supertab'
@@ -63,6 +63,7 @@ Bundle "MarcWeber/vim-addon-mw-utils"
 "Bundle "garbas/vim-snipmate"
 Bundle "MarcWeber/ultisnips"
 Bundle "buotex/vim-snippets"
+Bundle "rking/ag.vim"
 filetype plugin indent on
 set confirm
 
