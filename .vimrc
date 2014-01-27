@@ -27,17 +27,13 @@ Bundle 'gmarik/vundle'
 
 Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
-"Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'tpope/vim-rails.git'
 " vim-scripts repos
 Bundle 'L9'
-"Bundle 'FuzzyFinder'
 Bundle 'eiginn/netrw'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-surround'
-"Bundle 'tpope/vim-markdown'
-"Bundle 'rcmdnk/vim-markdown'
 Bundle 'buotex/vim-markdown'
 Bundle 'sjl/gundo.vim'
 if has('clientserver')
@@ -45,24 +41,17 @@ Bundle 'pydave/AsyncCommand'
 Bundle 'buotex/vim-pomodoro'
 endif
 Bundle 'buotex/vim-airline'
-"Bundle 'ervandew/supertab'
-"Bundle 'joonty/vdebug'
-"Bundle 'davidhalter/jedi-vim'
+Bundle 'ervandew/supertab'
 Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
 Bundle 'mattn/calendar-vim'
 Bundle 'jmcantrell/vim-journal'
-"Bundle 'buotex/vim-instant-markdown'
-"Bundle 'buotex/instant-markdown-d'
-"Bundle 'buotex/Docter'
 Bundle 'buotex/vim-simpledb'
 "Bundle 'wakatime/vim-wakatime'
-"Bundle 'Valloric/YouCompleteMe'
 Bundle "MarcWeber/vim-addon-mw-utils"
 "Bundle "tomtom/tlib_vim"
-"Bundle "garbas/vim-snipmate"
-Bundle "MarcWeber/ultisnips"
 Bundle "buotex/vim-snippets"
+Bundle "SirVer/ultisnips"
 Bundle "rking/ag.vim"
 filetype plugin indent on
 set confirm
@@ -71,13 +60,13 @@ let g:journal_directory = "~/blog/posts/journal"
 let g:journal_extension = "markdown"
 let g:instant_markdown_autostart = 0
 let g:vim_markdown_initial_foldlevel = 3
-let g:always_use_first_snippet = 1
+"let g:always_use_first_snippet = 1
 
 "airline configuration"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 "let g:airline#extensions#pomodoro#enabled=1
-set ttimeoutlen=50
+set timeout timeoutlen=150 ttimeoutlen=50
 set laststatus=2
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
@@ -107,7 +96,7 @@ set guicursor+=o:hor50-Cursor
 set guicursor+=i-ci:ver25-Cursor
 set guicursor+=r-cr:hor20-Cursor
 set guicursor+=sm:block-Cursor-blinkwait175-blinkoff150-blinkon175
-
+set guioptions=Ace
 "let g:jedi#popup_on_dot = 0
 let g:gist_detect_filetype = 1
 let g:gist_get_multiplefile=1
@@ -146,8 +135,6 @@ cmap w!! w !sudo tee > /dev/null %
 "vmap <C-c> '<,'>w !xclip -selection clipboard
 nmap ,p :r ~/.buffer <CR>
 
-set timeout timeoutlen=250
-set hidden
 command C :nohls
 
 colorscheme wombat256mod
@@ -185,7 +172,7 @@ setlocal expandtab
 setlocal textwidth=120
 setlocal nowrap
 
-map <F4> :NERDTree <CR>
+"map <F4> :NERDTree <CR>
 map <F6> :setlocal spell spelllang=en_us <CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""'
@@ -227,8 +214,8 @@ endif
 
 "
 "
-imap <c-n> <NL>
-cmap <c-n> <NL>
+"imap <c-n> <NL>
+"cmap <c-n> <NL>
 inoremap <c-j> <c-n>
 cnoremap <c-j> <c-n>
 
@@ -237,10 +224,6 @@ noremap n <down>
 noremap e <up>
 noremap i <right>
 
-noremap! <esc>h <left>
-noremap! <esc>n <down>
-noremap! <esc>e <up>
-noremap! <esc>i <right>
 " move these keys to their qwerty positions because they are
 " in the way of hjkl (and E for J)
 noremap k n
@@ -284,8 +267,8 @@ noremap <right> <nop>
 "inoremap <esc> <nop>
 nnoremap <Space> i
 "Disable up / down for ycm
-let g:ycm_key_list_select_completion = ['<TAB>']
-let g:ycm_key_list_previous_completion = ['<S-TAB>']
+"let g:ycm_key_list_select_completion = ['<TAB>']
+"let g:ycm_key_list_previous_completion = ['<S-TAB>']
 
 let g:UltiSnipsJumpForwardTrigger="<c-n>"
 let g:UltiSnipsJumpBackwardTrigger="<c-e>"
