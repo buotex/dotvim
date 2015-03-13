@@ -24,43 +24,61 @@ endif
 " required! 
 Bundle 'gmarik/vundle'
 
+Bundle 'mileszs/ack.vim'
+Bundle 'rbgrouleff/bclose.vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'godlygeek/csapprox'
+Bundle 'airblade/vim-gitgutter'
+"Bundle 'Shougo/neocomplete.vim'
+Bundle 'google/vim-maktaba'
+Bundle 'google/vim-codefmtlib'
+Bundle 'google/vim-codefmt'
+Bundle 'google/vim-glaive'
+Bundle 'Rip-Rip/clang_complete'
+call glaive#Install()
+Glaive codefmt plugin[mappings]
+
+
 
 Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tpope/vim-rails.git'
 " vim-scripts repos
 Bundle 'L9'
-Bundle 'eiginn/netrw'
+"Bundle 'eiginn/netrw'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-surround'
-Bundle 'buotex/vim-markdown'
-Bundle 'sjl/gundo.vim'
-if has('clientserver')
-Bundle 'pydave/AsyncCommand'
-Bundle 'buotex/vim-pomodoro'
-endif
-Bundle 'buotex/vim-airline'
+"Bundle 'buotex/vim-markdown'
+"Bundle 'sjl/gundo.vim'
+"if has('clientserver')
+"Bundle 'pydave/AsyncCommand'
+"Bundle 'buotex/vim-pomodoro'
+"endif
+"Bundle 'buotex/vim-airline'
 Bundle 'ervandew/supertab'
-Bundle 'mattn/webapi-vim'
-Bundle 'mattn/gist-vim'
-Bundle 'mattn/calendar-vim'
-Bundle 'jmcantrell/vim-journal'
-Bundle 'buotex/vim-simpledb'
+"Bundle 'mattn/webapi-vim'
+"Bundle 'mattn/gist-vim'
+"Bundle 'mattn/calendar-vim'
+"Bundle 'jmcantrell/vim-journal'
+"Bundle 'buotex/vim-simpledb'
 "Bundle 'wakatime/vim-wakatime'
-Bundle "MarcWeber/vim-addon-mw-utils"
+"Bundle "MarcWeber/vim-addon-mw-utils"
 "Bundle "tomtom/tlib_vim"
-Bundle "buotex/vim-snippets"
-Bundle "SirVer/ultisnips"
-Bundle "rking/ag.vim"
+"Bundle "buotex/vim-snippets"
+"Bundle "SirVer/ultisnips"
+"Bundle "rking/ag.vim"
 filetype plugin indent on
 set confirm
+"//set shell=/bin/zsh\ -i
 
 let g:journal_directory = "~/blog/posts/journal"
 let g:journal_extension = "markdown"
 let g:instant_markdown_autostart = 0
 let g:vim_markdown_initial_foldlevel = 3
 "let g:always_use_first_snippet = 1
+let g:clang_library_path="/usr/lib/llvm-3.4/lib/libclang.so"
 
 "airline configuration"
 let g:airline#extensions#tabline#enabled = 1
@@ -88,6 +106,7 @@ let g:pomodoro_do_log = 1
 let g:pomodoro_log_file = "~/media/pomodoro.log"
 
 nnoremap <F2> :GundoToggle<CR>
+let g:ack_default_options = " -H --nocolor --nogroup --column"
 
 set guifont=Terminus
 set guicursor=n-v-c:block-Cursor-blinkon0
@@ -116,8 +135,8 @@ endif
 set t_Co=256
 
 
-nnoremap  <silent>   <c-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>
-nnoremap  <silent> <c-s-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
+nnoremap  <silent>   <c-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:tabn<CR>
+nnoremap  <silent> <c-s-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:tabp<CR>
 
 noremap <C-Down> <C-W>j
 noremap <C-Right> <C-W>l
