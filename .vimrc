@@ -38,7 +38,8 @@ Bundle 'google/vim-glaive'
 Bundle 'Rip-Rip/clang_complete'
 call glaive#Install()
 Glaive codefmt plugin[mappings]
-
+Bundle 'xolox/vim-misc'
+Bundle 'xolox/vim-session'
 
 
 Bundle 'tpope/vim-fugitive'
@@ -70,6 +71,7 @@ Bundle 'ervandew/supertab'
 "Bundle "SirVer/ultisnips"
 "Bundle "rking/ag.vim"
 filetype plugin indent on
+set completeopt="menu"
 set confirm
 "//set shell=/bin/zsh\ -i
 
@@ -108,7 +110,7 @@ let g:pomodoro_log_file = "~/media/pomodoro.log"
 nnoremap <F2> :GundoToggle<CR>
 let g:ack_default_options = " -H --nocolor --nogroup --column"
 
-set guifont=Terminus
+"set guifont=Terminus
 set guicursor=n-v-c:block-Cursor-blinkon0
 set guicursor+=ve:ver35-Cursor
 set guicursor+=o:hor50-Cursor
@@ -173,7 +175,6 @@ set incsearch
 set cuc
 set cul
 set number
-set relativenumber
 set noshowmatch
 let loaded_matchparen=1
 map ,e :e <C-R>=expand("%:p:h") . "/" <CR>
