@@ -30,46 +30,22 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'godlygeek/csapprox'
 Bundle 'airblade/vim-gitgutter'
-"Bundle 'Shougo/neocomplete.vim'
 Bundle 'google/vim-maktaba'
 Bundle 'google/vim-codefmtlib'
 Bundle 'google/vim-codefmt'
 Bundle 'google/vim-glaive'
-Bundle 'Rip-Rip/clang_complete'
-call glaive#Install()
-Glaive codefmt plugin[mappings]
 Bundle 'xolox/vim-misc'
 Bundle 'xolox/vim-session'
 
 
 Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'tpope/vim-rails.git'
-" vim-scripts repos
 Bundle 'L9'
 "Bundle 'eiginn/netrw'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-surround'
-"Bundle 'buotex/vim-markdown'
-"Bundle 'sjl/gundo.vim'
-"if has('clientserver')
-"Bundle 'pydave/AsyncCommand'
-"Bundle 'buotex/vim-pomodoro'
-"endif
-"Bundle 'buotex/vim-airline'
 Bundle 'ervandew/supertab'
-"Bundle 'mattn/webapi-vim'
-"Bundle 'mattn/gist-vim'
-"Bundle 'mattn/calendar-vim'
-"Bundle 'jmcantrell/vim-journal'
-"Bundle 'buotex/vim-simpledb'
-"Bundle 'wakatime/vim-wakatime'
-"Bundle "MarcWeber/vim-addon-mw-utils"
-"Bundle "tomtom/tlib_vim"
-"Bundle "buotex/vim-snippets"
-"Bundle "SirVer/ultisnips"
-"Bundle "rking/ag.vim"
 filetype plugin indent on
 set completeopt="menu"
 set confirm
@@ -80,11 +56,7 @@ let g:journal_extension = "markdown"
 let g:instant_markdown_autostart = 0
 let g:vim_markdown_initial_foldlevel = 3
 "let g:always_use_first_snippet = 1
-let g:clang_library_path="/usr/lib/llvm-3.4/lib/libclang.so"
 
-"airline configuration"
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
 "let g:airline#extensions#pomodoro#enabled=1
 set timeout timeoutlen=150 ttimeoutlen=50
 set laststatus=2
@@ -253,8 +225,8 @@ noremap L I
 noremap N J
 noremap E K
 noremap I L
-
-" this is the only key that isn't in qwerty or colemak position
+"
+"" this is the only key that isn't in qwerty or colemak position
 noremap j e
 noremap J E
 
@@ -274,21 +246,6 @@ cmap <c-h> <BS>
 " this nerdtree mapping interferes with movement
 let g:NERDTreeMapOpenExpl = "j"
 
-"Konami go!
-inoremap <up> <nop>
-noremap <up> <nop>
-inoremap <down> <nop>
-noremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
-noremap <left> <nop>
-noremap <right> <nop>
-"B A START"
-"inoremap <esc> <nop>
-nnoremap <Space> i
-"Disable up / down for ycm
-"let g:ycm_key_list_select_completion = ['<TAB>']
-"let g:ycm_key_list_previous_completion = ['<S-TAB>']
 
 let g:UltiSnipsJumpForwardTrigger="<c-n>"
 let g:UltiSnipsJumpBackwardTrigger="<c-e>"
