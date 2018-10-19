@@ -25,36 +25,37 @@ endif
 Bundle 'gmarik/vundle'
 
 Bundle 'mileszs/ack.vim'
-Bundle 'rbgrouleff/bclose.vim'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'godlygeek/csapprox'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'google/vim-maktaba'
-Bundle 'google/vim-codefmtlib'
-Bundle 'google/vim-codefmt'
-Bundle 'google/vim-glaive'
-Bundle 'xolox/vim-misc'
-Bundle 'xolox/vim-session'
+Bundle 'nvie/vim-flake8'
+"Bundle 'rbgrouleff/bclose.vim'
+"Bundle 'scrooloose/nerdtree'
+"Bundle 'scrooloose/nerdcommenter'
+"Bundle 'godlygeek/csapprox'
+"Bundle 'airblade/vim-gitgutter'
+"Bundle 'google/vim-maktaba'
+"Bundle 'google/vim-codefmtlib'
+"Bundle 'google/vim-codefmt'
+"Bundle 'google/vim-glaive'
+"Bundle 'xolox/vim-misc'
+"Bundle 'xolox/vim-session'
 
 
-Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'L9'
+"Bundle 'tpope/vim-fugitive'
+"Bundle 'Lokaltog/vim-easymotion'
+"Bundle 'L9'
 "Bundle 'eiginn/netrw'
-Bundle 'kien/ctrlp.vim'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'tpope/vim-surround'
-Bundle 'ervandew/supertab'
+"Bundle 'kien/ctrlp.vim'
+"Bundle 'tpope/vim-unimpaired'
+"Bundle 'tpope/vim-surround'
+"Bundle 'ervandew/supertab'
 filetype plugin indent on
 set completeopt="menu"
 set confirm
 "//set shell=/bin/zsh\ -i
 
-let g:journal_directory = "~/blog/posts/journal"
-let g:journal_extension = "markdown"
-let g:instant_markdown_autostart = 0
-let g:vim_markdown_initial_foldlevel = 3
+"let g:journal_directory = "~/blog/posts/journal"
+"let g:journal_extension = "markdown"
+"let g:instant_markdown_autostart = 0
+"let g:vim_markdown_initial_foldlevel = 3
 "let g:always_use_first_snippet = 1
 
 "let g:airline#extensions#pomodoro#enabled=1
@@ -157,12 +158,13 @@ nnoremap ,cd :lcd %:p:h<CR>:pwd<CR>
 "set shellcmdflag=-ic
 
 set nosmartindent
-setlocal tabstop=2
-setlocal softtabstop=2
-setlocal shiftwidth=2
+setlocal tabstop=4
+setlocal softtabstop=4
+setlocal shiftwidth=4
 setlocal expandtab
-setlocal textwidth=120
+setlocal textwidth=79
 setlocal nowrap
+set colorcolumn=+1
 
 "map <F4> :NERDTree <CR>
 map <F6> :setlocal spell spelllang=en_us <CR>
