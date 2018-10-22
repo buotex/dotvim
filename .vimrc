@@ -10,22 +10,14 @@ filetype off
 "noremap <C-L> <PageUp>
 
 
-if has('win32') || has('win64')
-  set rtp+=~/vimfiles/bundle/vundle/
-  call vundle#rc('$HOME/vimfiles/bundle/')
-else
-  " Usual quickstart instructions
-  set rtp+=~/.vim/bundle/vundle/
-  call vundle#rc()
-endif
 
 
-" let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/vundle'
+call plug#begin('~/.vim/plugged')
 
-Bundle 'mileszs/ack.vim'
-Bundle 'nvie/vim-flake8'
+Plug 'mileszs/ack.vim'
+Plug 'nvie/vim-flake8'
+
+call plug#end()
 "Bundle 'rbgrouleff/bclose.vim'
 "Bundle 'scrooloose/nerdtree'
 "Bundle 'scrooloose/nerdcommenter'
