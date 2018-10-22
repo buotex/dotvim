@@ -2,55 +2,28 @@ set nocompatible
 syntax on
 filetype off
 
-"noremap <C-N> <Left>
-"noremap <C-E> <Down>
-"noremap <C-U> <Up>
-"noremap <C-I> <Right>
-"noremap <C-Y> <PageDown>
-"noremap <C-L> <PageUp>
-
-
-
 
 call plug#begin('~/.vim/plugged')
 
 Plug 'mileszs/ack.vim'
 Plug 'nvie/vim-flake8'
+Plug '~/.fzf'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'itchyny/lightline.vim'
+Plug 'tpope/vim-eunuch'
+Plug 'scrooloose/nerdtree'
+Plug 'w0rp/ale'
+Plug 'airblade/vim-gitgutter'
+Plug 'davidhalter/jedi-vim'
+Plug 'ervandew/supertab'
+
+
 
 call plug#end()
-"Bundle 'rbgrouleff/bclose.vim'
-"Bundle 'scrooloose/nerdtree'
-"Bundle 'scrooloose/nerdcommenter'
-"Bundle 'godlygeek/csapprox'
-"Bundle 'airblade/vim-gitgutter'
-"Bundle 'google/vim-maktaba'
-"Bundle 'google/vim-codefmtlib'
-"Bundle 'google/vim-codefmt'
-"Bundle 'google/vim-glaive'
-"Bundle 'xolox/vim-misc'
-"Bundle 'xolox/vim-session'
-
-
-"Bundle 'tpope/vim-fugitive'
-"Bundle 'Lokaltog/vim-easymotion'
-"Bundle 'L9'
-"Bundle 'eiginn/netrw'
-"Bundle 'kien/ctrlp.vim'
-"Bundle 'tpope/vim-unimpaired'
-"Bundle 'tpope/vim-surround'
-"Bundle 'ervandew/supertab'
 filetype plugin indent on
 set completeopt="menu"
 set confirm
-"//set shell=/bin/zsh\ -i
 
-"let g:journal_directory = "~/blog/posts/journal"
-"let g:journal_extension = "markdown"
-"let g:instant_markdown_autostart = 0
-"let g:vim_markdown_initial_foldlevel = 3
-"let g:always_use_first_snippet = 1
-
-"let g:airline#extensions#pomodoro#enabled=1
 set timeout timeoutlen=150 ttimeoutlen=50
 set laststatus=2
 if !exists('g:airline_symbols')
@@ -59,20 +32,6 @@ if !exists('g:airline_symbols')
 let g:airline_symbols.space = "\ua0""
 "end airline configuration"
 
-"Pomodoro configuration
-" Duration of a pomodoro in minutes (default: 25)
-let g:pomodoro_time_work = 25
-
-" Duration of a break in minutes (default: 5)
-let g:pomodoro_time_slack = 5 
-"
-" " Log completed pomodoros, 0 = False, 1 = True (default: 0)
-let g:pomodoro_do_log = 1
-"
-" " Path to the pomodoro log file (default: /tmp/pomodoro.log)
-let g:pomodoro_log_file = "~/media/pomodoro.log"
-
-nnoremap <F2> :GundoToggle<CR>
 let g:ack_default_options = " -H --nocolor --nogroup --column"
 
 "set guifont=Terminus
@@ -87,21 +46,10 @@ set guioptions=Ace
 let g:gist_detect_filetype = 1
 let g:gist_get_multiplefile=1
 
-
-if $TERM == "linux" 
-	set term=xterm
-  set <F1>=[[A
-  set <F2>=[[B
-  set <F3>=[[C
-  set <F4>=[[D
-  set <F5>=[[E
-endif
-if $TERM == "screen"
-  set term=xterm
-endif
 set t_Co=256
 
 
+map <C-e> :NERDTreeToggle<CR>
 nnoremap  <silent>   <c-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:tabn<CR>
 nnoremap  <silent> <c-s-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:tabp<CR>
 
@@ -241,5 +189,5 @@ cmap <c-h> <BS>
 let g:NERDTreeMapOpenExpl = "j"
 
 
-let g:UltiSnipsJumpForwardTrigger="<c-n>"
-let g:UltiSnipsJumpBackwardTrigger="<c-e>"
+packloadall
+silent! helptags ALL

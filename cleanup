@@ -1,2 +1,0 @@
-#!/bin/zsh
-find . -user root \! -readable | xargs sudo rm
