@@ -8,28 +8,26 @@ call plug#begin('~/.vim/plugged')
 Plug 'mileszs/ack.vim'
 Plug 'nvie/vim-flake8'
 Plug '~/.fzf'
-Plug 'terryma/vim-multiple-cursors'
+"Plug 'terryma/vim-multiple-cursors'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-eunuch'
 Plug 'scrooloose/nerdtree'
-Plug 'w0rp/ale'
 Plug 'airblade/vim-gitgutter'
 Plug 'davidhalter/jedi-vim'
 Plug 'ervandew/supertab'
-
-
+Plug 'w0rp/ale'
+Plug 'zchee/deoplete-jedi'
 
 call plug#end()
+
 filetype plugin indent on
 set completeopt="menu"
 set confirm
 
 set timeout timeoutlen=150 ttimeoutlen=50
 set laststatus=2
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-  endif
-let g:airline_symbols.space = "\ua0""
+let g:jedi#completion_enabled = 0
+let g:jedi#documentation_command = "N"
 "end airline configuration"
 
 let g:ack_default_options = " -H --nocolor --nogroup --column"
@@ -49,7 +47,7 @@ let g:gist_get_multiplefile=1
 set t_Co=256
 
 
-map <C-e> :NERDTreeToggle<CR>
+map <C-k> :NERDTreeToggle<CR>
 nnoremap  <silent>   <c-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:tabn<CR>
 nnoremap  <silent> <c-s-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:tabp<CR>
 
@@ -61,6 +59,11 @@ inoremap <C-Down> <C-o><C-W>j
 inoremap <C-Right> <C-o><C-W>l
 inoremap <C-Left> <C-o><C-W>h
 inoremap <C-Up> <C-o><C-W>k
+
+noremap <C-n> <C-W>j
+noremap <C-i> <C-W>l
+noremap <C-h> <C-W>h
+noremap <C-e> <C-W>k
 
 
 map <C-PageUp> :tabp <CR>
@@ -130,7 +133,7 @@ set directory=~/dump/vim-swap/
 "set directory+=~/tmp//
 "set directory+=.
 " viminfo stores the the state of your previous editing session
-set viminfo+=n~/dump/viminfo
+" set viminfo+=n~/dump/viminfo
 
 if exists("+undofile")
   " undofile - This allows you to use undos after exiting and restarting
@@ -181,9 +184,6 @@ nnoremap <c-w>e <c-w>k
 nnoremap <c-w>k <c-w>n
 nnoremap <c-w>l <c-w>i
 
-" pentadactyl binds ctrl-h to history otherwise
-map <c-h> <BS>
-cmap <c-h> <BS>
 
 " this nerdtree mapping interferes with movement
 let g:NERDTreeMapOpenExpl = "j"
