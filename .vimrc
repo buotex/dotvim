@@ -28,6 +28,8 @@ set timeout timeoutlen=150 ttimeoutlen=50
 set laststatus=2
 let g:jedi#completion_enabled = 0
 let g:jedi#documentation_command = "N"
+let g:jedi#smart_auto_mappings = 0
+
 "end airline configuration"
 
 let g:ack_default_options = " -H --nocolor --nogroup --column"
