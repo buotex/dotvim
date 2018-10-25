@@ -16,7 +16,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'davidhalter/jedi-vim'
 Plug 'ervandew/supertab'
 Plug 'w0rp/ale'
-Plug 'zchee/deoplete-jedi'
+"Plug 'zchee/deoplete-jedi'
 
 call plug#end()
 
@@ -107,7 +107,6 @@ setlocal tabstop=4
 setlocal softtabstop=4
 setlocal shiftwidth=4
 setlocal expandtab
-setlocal textwidth=79
 setlocal nowrap
 set colorcolumn=+1
 
