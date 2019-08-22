@@ -6,22 +6,30 @@ filetype off
 call plug#begin('~/.vim/plugged')
 
 Plug 'mileszs/ack.vim'
-Plug 'nvie/vim-flake8'
-Plug '~/.fzf'
+"Plug 'nvie/vim-flake8'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'urbainvaes/fzf-marks', { 'dir': '$HOME/.fzf-marks', 'do': 'echo source $HOME/.fzf-marks/fzf-marks.plugin.bash >> ~/.bashrc' }
+
+
 "Plug 'terryma/vim-multiple-cursors'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-eunuch'
 Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-gitgutter'
-Plug 'davidhalter/jedi-vim'
+"Plug 'davidhalter/jedi-vim'
 Plug 'ervandew/supertab'
 Plug 'w0rp/ale'
+Plug 'python-rope/ropevim'
+Plug 'stephpy/vim-yaml'
+
+
 "Plug 'zchee/deoplete-jedi'
 
 call plug#end()
 
 filetype plugin indent on
-set completeopt="menu"
+"set completeopt="menu"
 set confirm
 
 set timeout timeoutlen=150 ttimeoutlen=50
@@ -29,6 +37,10 @@ set laststatus=2
 let g:jedi#completion_enabled = 0
 let g:jedi#documentation_command = "N"
 let g:jedi#smart_auto_mappings = 0
+
+let ropevim_vim_completion=1
+let ropevim_extended_complete=1
+
 
 "end airline configuration"
 
@@ -103,9 +115,9 @@ nnoremap ,cd :lcd %:p:h<CR>:pwd<CR>
 "set shellcmdflag=-ic
 
 set nosmartindent
-setlocal tabstop=4
-setlocal softtabstop=4
-setlocal shiftwidth=4
+setlocal tabstop=2
+setlocal softtabstop=2
+setlocal shiftwidth=2
 setlocal expandtab
 setlocal nowrap
 set colorcolumn=+1
@@ -188,6 +200,15 @@ nnoremap <c-w>l <c-w>i
 
 " this nerdtree mapping interferes with movement
 let g:NERDTreeMapOpenExpl = "j"
+
+command! -bang -nargs=* Rg
+  \ call fzf#vim#grep(
+  \   'rg --column --line-number --hidden --ignore-case --no-heading --color=always '.shellescape(<q-args>), 1,
+  \   <bang>0 ? fzf#vim#with_preview({'options': '--delimiter : --nth 4..'}, 'up:60%')
+  \           : fzf#vim#with_preview({'options': '--delimiter : --nth 4..'}, 'right:50%:hidden', '?'),
+  \   <bang>0)
+nnoremap <C-g> :Rg<Cr>
+nnoremap <C-f> :Files<Cr>
 
 
 packloadall
