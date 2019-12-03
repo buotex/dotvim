@@ -15,12 +15,14 @@ Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-eunuch'
 Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-gitgutter'
-Plug 'ervandew/supertab'
 Plug 'w0rp/ale'
 Plug 'stephpy/vim-yaml'
 Plug 'janko/vim-test'
 "Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install()}}
 Plug 'derekwyatt/vim-scala'
+Plug 'davidhalter/jedi-vim'
+Plug 'lifepillar/vim-mucomplete'
+
 
 
 "Plug 'zchee/deoplete-jedi'
@@ -28,21 +30,36 @@ Plug 'derekwyatt/vim-scala'
 call plug#end()
 
 filetype plugin indent on
-"set completeopt="menu"
 
 autocmd FileType json syntax match Comment +\/\/.\+$+
 au BufRead,BufNewFile *.sbt set filetype=scala
-set confirm
+
+set completeopt-=preview
+set completeopt+=longest,menuone,noselect
+let g:jedi#popup_on_dot = 0  " It may be 1 as well
+set shortmess+=c   " Shut off completion messages
+set belloff+=ctrlg " If Vim beeps during completion
+inoremap <silent> <plug>(MUcompleteFwdKey) <c-n>
+imap <c-n> <plug>(MUcompleteCycFwd)
+inoremap <silent> <plug>(MUcompleteBwdKey) <c-h>
+imap <c-h> <plug>(MUcompleteCycBwd)
+let g:jedi#goto_command = "<leader>s"
+let g:jedi#goto_assignments_command = "<leader>d"
+let g:jedi#documentation_command = "E"
+let g:jedi#usages_command = "<leader>k"
+let g:jedi#completions_command = "<C-Space>"
+let g:jedi#rename_command = "<leader>r"
+
+"let g:jedi#completion_enabled = 0
+"let g:jedi#smart_auto_mappings = 0
+
+let g:ale_virtualenv_dir_names = ['.direnv']
 
 set timeout timeoutlen=150 ttimeoutlen=50
 set laststatus=2
-let g:jedi#completion_enabled = 0
-let g:jedi#documentation_command = "N"
-let g:jedi#smart_auto_mappings = 0
-let g:ale_virtualenv_dir_names = ['.direnv']
 
-let ropevim_vim_completion=1
-let ropevim_extended_complete=1
+"let ropevim_vim_completion=1
+"let ropevim_extended_complete=1
 
 
 "end airline configuration"
@@ -52,20 +69,24 @@ let g:gist_get_multiplefile=1
 
 set t_Co=256
 set number
+set cuc
+set cul
+set ruler
+set incsearch
 
 
-map <C-k> :NERDTreeToggle<CR>
-nmap <silent> <leader>m :History<CR>
+"map <C-k> :NERDTreeToggle<CR>
+"nmap <silent> <leader>m :History<CR>
 
 
 noremap <C-n> <C-W>j
 noremap <C-i> <C-W>l
 noremap <C-h> <C-W>h
 noremap <C-e> <C-W>k
-noremap <C-[> :cprev<CR>
-noremap <C-]> :cnext<CR>
-nmap <silent> [ <Plug>(ale_previous_wrap)
-nmap <silent> ] <Plug>(ale_next_wrap)
+"noremap <C-[> :cprev<CR>
+"noremap <C-]> :cnext<CR>
+"nmap <silent> [ <Plug>(ale_previous_wrap)
+"nmap <silent> ] <Plug>(ale_next_wrap)
 
 
 map <C-PageUp> :tabp <CR>
@@ -81,10 +102,6 @@ colorscheme wombat256mod
 set wildmode=longest:full
 set wildmenu
 
-"set ruler
-"set incsearch
-"set cuc
-"set cul
 "set number
 "set noshowmatch
 let loaded_matchparen=1
@@ -104,7 +121,7 @@ set colorcolumn=+1
 
 map <F6> :setlocal spell spelllang=en_us <CR>
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""'
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""'
 "folders
 if isdirectory($HOME . '/dump/vim-backup') == 0
   :silent !mkdir -p ~/dump/vim-backup >/dev/null 2>&1
