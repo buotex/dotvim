@@ -14,11 +14,13 @@ Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-eunuch'
 Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-gitgutter'
-Plug 'ervandew/supertab'
 Plug 'w0rp/ale'
-Plug 'python-rope/ropevim'
+"Plug 'python-rope/ropevim'
 Plug 'stephpy/vim-yaml'
-Plug 'psf/black'
+"Plug 'psf/black'
+Plug 'davidhalter/jedi-vim'
+Plug 'lifepillar/vim-mucomplete'
+
 
 
 "Plug 'zchee/deoplete-jedi'
@@ -26,17 +28,32 @@ Plug 'psf/black'
 call plug#end()
 
 filetype plugin indent on
-"set completeopt="menu"
+
+set completeopt-=preview
+set completeopt+=longest,menuone,noselect
+let g:jedi#popup_on_dot = 0  " It may be 1 as well
+set shortmess+=c   " Shut off completion messages
+set belloff+=ctrlg " If Vim beeps during completion
+inoremap <silent> <plug>(MUcompleteFwdKey) <c-n>
+imap <c-n> <plug>(MUcompleteCycFwd)
+inoremap <silent> <plug>(MUcompleteBwdKey) <c-h>
+imap <c-h> <plug>(MUcompleteCycBwd)
+let g:jedi#goto_command = "<leader>s"
+let g:jedi#goto_assignments_command = "<leader>d"
+let g:jedi#documentation_command = "E"
+let g:jedi#usages_command = "<leader>k"
+let g:jedi#completions_command = "<C-Space>"
+let g:jedi#rename_command = "<leader>r"
+
+
+
 set confirm
 
 set timeout timeoutlen=150 ttimeoutlen=50
 set laststatus=2
-let g:jedi#completion_enabled = 0
-let g:jedi#documentation_command = "N"
-let g:jedi#smart_auto_mappings = 0
 
-let ropevim_vim_completion=1
-let ropevim_extended_complete=1
+"let ropevim_vim_completion=1
+"let ropevim_extended_complete=1
 
 
 "end airline configuration"
@@ -47,18 +64,18 @@ let g:gist_get_multiplefile=1
 set t_Co=256
 
 
-map <C-k> :NERDTreeToggle<CR>
-nmap <silent> <leader>m :History<CR>
+"map <C-k> :NERDTreeToggle<CR>
+"nmap <silent> <leader>m :History<CR>
 
 
 noremap <C-n> <C-W>j
 noremap <C-i> <C-W>l
 noremap <C-h> <C-W>h
 noremap <C-e> <C-W>k
-noremap <C-[> :cprev<CR>
-noremap <C-]> :cnext<CR>
-nmap <silent> [ <Plug>(ale_previous_wrap)
-nmap <silent> ] <Plug>(ale_next_wrap)
+"noremap <C-[> :cprev<CR>
+"noremap <C-]> :cnext<CR>
+"nmap <silent> [ <Plug>(ale_previous_wrap)
+"nmap <silent> ] <Plug>(ale_next_wrap)
 
 
 map <C-PageUp> :tabp <CR>
@@ -97,7 +114,7 @@ set colorcolumn=+1
 
 map <F6> :setlocal spell spelllang=en_us <CR>
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""'
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""'
 "folders
 if isdirectory($HOME . '/dump/vim-backup') == 0
   :silent !mkdir -p ~/dump/vim-backup >/dev/null 2>&1
