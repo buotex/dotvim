@@ -10,15 +10,17 @@ Plug 'junegunn/fzf.vim'
 Plug 'urbainvaes/fzf-marks', { 'dir': '$HOME/.fzf-marks', 'do': 'echo source $HOME/.fzf-marks/fzf-marks.plugin.bash >> ~/.bashrc' }
 
 
+Plug 'JuliaEditorSupport/julia-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-eunuch'
 Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-gitgutter'
 Plug 'ervandew/supertab'
 Plug 'w0rp/ale'
-Plug 'python-rope/ropevim'
 Plug 'stephpy/vim-yaml'
-Plug 'psf/black'
+Plug 'janko/vim-test'
+"Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install()}}
+Plug 'derekwyatt/vim-scala'
 
 
 "Plug 'zchee/deoplete-jedi'
@@ -27,6 +29,9 @@ call plug#end()
 
 filetype plugin indent on
 "set completeopt="menu"
+
+autocmd FileType json syntax match Comment +\/\/.\+$+
+au BufRead,BufNewFile *.sbt set filetype=scala
 set confirm
 
 set timeout timeoutlen=150 ttimeoutlen=50
@@ -34,6 +39,7 @@ set laststatus=2
 let g:jedi#completion_enabled = 0
 let g:jedi#documentation_command = "N"
 let g:jedi#smart_auto_mappings = 0
+let g:ale_virtualenv_dir_names = ['.direnv']
 
 let ropevim_vim_completion=1
 let ropevim_extended_complete=1
@@ -45,6 +51,7 @@ let g:gist_detect_filetype = 1
 let g:gist_get_multiplefile=1
 
 set t_Co=256
+set number
 
 
 map <C-k> :NERDTreeToggle<CR>
@@ -168,15 +175,14 @@ nnoremap <c-w>l <c-w>i
 " this nerdtree mapping interferes with movement
 let g:NERDTreeMapOpenExpl = "j"
 
-command! -bang -nargs=* Rg
-  \ call fzf#vim#grep(
-  \   'rg --column --line-number --hidden --ignore-case --no-heading --color=always '.shellescape(<q-args>), 1,
-  \   <bang>0 ? fzf#vim#with_preview({'options': '--delimiter : --nth 4..'}, 'up:60%')
-  \           : fzf#vim#with_preview({'options': '--delimiter : --nth 4..'}, 'right:50%:hidden', '?'),
-  \   <bang>0)
+" command! -bang -nargs=* Rg
+"   \ call fzf#vim#grep(
+"   \   'rg --column --line-number --hidden --ignore-case --no-heading --color=always '.shellescape(<q-args>), 1,
+"   \   <bang>0 ? fzf#vim#with_preview({'options': '--delimiter : --nth 4..'}, 'up:60%')
+"   \           : fzf#vim#with_preview({'options': '--delimiter : --nth 4..'}, 'right:50%:hidden', '?'),
+"   \   <bang>0)
 nnoremap <C-g> :Rg<Cr>
 nnoremap <C-f> :Files<Cr>
-
 
 packloadall
 silent! helptags ALL
