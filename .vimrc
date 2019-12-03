@@ -15,6 +15,7 @@ Plug 'tpope/vim-eunuch'
 Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-gitgutter'
 Plug 'w0rp/ale'
+Plug 'JuliaEditorSupport/julia-vim'
 "Plug 'python-rope/ropevim'
 Plug 'stephpy/vim-yaml'
 "Plug 'psf/black'
@@ -48,6 +49,7 @@ let g:jedi#rename_command = "<leader>r"
 
 
 set confirm
+set hlsearch
 
 set timeout timeoutlen=150 ttimeoutlen=50
 set laststatus=2
@@ -88,14 +90,15 @@ colorscheme wombat256mod
 "set ssop-=options
 "set ssop-=blank
 "set ssop-=buffers
-set wildmode=longest:full
-set wildmenu
+"set wildmode=longest:full
+"set wildmenu
 
-"set ruler
-"set incsearch
-"set cuc
-"set cul
-"set number
+set number
+
+set ruler
+set incsearch
+set cuc
+set cul
 "set noshowmatch
 let loaded_matchparen=1
 map ,e :e <C-R>=expand("%:p:h") . "/" <CR>
