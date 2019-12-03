@@ -87,6 +87,11 @@ noremap <C-e> <C-W>k
 "noremap <C-]> :cnext<CR>
 "nmap <silent> [ <Plug>(ale_previous_wrap)
 "nmap <silent> ] <Plug>(ale_next_wrap)
+" copy and paste
+vmap <C-c> "+yi
+vmap <C-x> "+c
+vmap <C-v> c<ESC>"+p
+imap <C-v> <ESC>"+pa
 
 
 map <C-PageUp> :tabp <CR>
